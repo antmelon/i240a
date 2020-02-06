@@ -40,7 +40,7 @@ main(int argc, const char *argv[])
   else {
     for (int i = 1; i < argc; i++) {
       const char *name = argv[i];
-      char friendlyName[strlen(name)];
+      char friendlyName[strlen(name)+1];
       upcaseWords(name, friendlyName);
       sayHello(friendlyName);
     }
