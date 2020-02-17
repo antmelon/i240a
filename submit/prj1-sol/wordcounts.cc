@@ -41,7 +41,7 @@ int main(int argc, char *argv[]){
     std::cout << "usage: ./wordcounts MAX_N_OUT MIN_WORD_LEN MAC_WORD_LEN FILE..." << std::endl;
     return 0;
   }
-  if(argc < 4){
+  if(argc < 5){
     std::cout << "Invalid number of arguments" << std::endl;
     return(0);
   }
