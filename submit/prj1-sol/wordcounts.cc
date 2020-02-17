@@ -1,7 +1,23 @@
 #include <iostream>
+#include <algorithm>
 #include <fstream>
 #include <string>
 #include <unordered_map>
+#include <vector>
+#include <utility>
+
+typedef std::pair<std::string, int> WordCount;
+
+//comparator function
+bool wordCountCompare(const WordCount &a, const WordCount &b){
+  if(std::get<1>(a) == std::get<1>(b)){
+    return(std::get<0>(b) > std::get<0>(a));
+  }
+  else{
+    return(std::get<1>(b) < std::get<1>(a));
+  }
+}
+
 
 int main(int argc, char *argv[]){
   //validate inputs and set values
@@ -35,23 +51,31 @@ int main(int argc, char *argv[]){
   int MIN_WORD_LEN = std::stoi(argv[2]);
   int MAX_WORD_LEN = std::stoi(argv[3]);
   std::unordered_map<std::string, int> wordmap;
+  
+  //iterate through files
   for(int i = 4; i < argc; i ++){
     std::ifstream in(argv[i]);
     while (in.good()){
       std::string w;
       in >> w;
       std::string formatted_w;
+      //reformat word
       for(std::string::size_type letter = 0; letter< w.size(); letter++){
 	if(std::isalpha(w[letter])){
 	  formatted_w += std::tolower(w[letter]);
 	}
       }
-      //put thing here
+      //add word to map if in parameters
       if(formatted_w.length()>=MIN_WORD_LEN && formatted_w.length()<=MAX_WORD_LEN){
-	std::cout << formatted_w << std::endl;
 	wordmap[formatted_w] += 1; 
-	std::cout << wordmap[formatted_w] << std::endl;
       }
     }
+  }
+  //convert to vector and sort
+  auto wordCounts = std::vector<WordCount>(wordmap.begin(), wordmap.end());
+  sort(wordCounts.begin(), wordCounts.end(), wordCountCompare);
+  //print vector items until MAX_N_OUT
+  for(int i = 0; i < MAX_N_OUT; i++){
+    std::cout << wordCounts[i].first << ": " << wordCounts[i].second << std::endl;
   }
 }
