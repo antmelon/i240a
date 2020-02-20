@@ -1,0 +1,1983 @@
+Script started on 2020-02-19 18:29:18-05:00 [TERM="screen-256color" TTY="/dev/pts/0" COLUMNS="119" LINES="62"]
+bash: /home/umrigar/cs240/bin/student.profile: Permission denied
+alongo5@remote02:~/i240a/submit/lab4$ ls
+lab4.LOG
+alongo5@remote02:~/i240a/submit/lab4$ cp ~/cs120/[K[K[K[K240/labs/lab4/exercises/-~/cs240/labs/lab4/exercises/r~/cs240/labs/lab4/exercises/ ~/cs240/labs/lab4/exercises/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C .
+alongo5@remote02:~/i240a/submit/lab4$ ls
+exercises  lab4.LOG
+alongo5@remote02:~/i240a/submit/lab4$ exit
+exit
+
+Script done on 2020-02-19 18:30:15-05:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2020-02-20 13:11:28-05:00 [TERM="screen-256color" TTY="/dev/pts/5" COLUMNS="80" LINES="51"]
+bash: /home/umrigar/cs240/bin/student.profile: Permission denied
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4$ git checkout lab4.LOG [K[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Kb4
+Already on 'lab4'
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4$ cd exercises/1-point/
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ l s
+main.cc  point.cc  point.hh
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ m al[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm ake -f ../Makefile 
+g++ -MT point.o -MMD -MP -MF .deps/point.d -g -Wall -std=c++17 -c point.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ point.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main point.o main.o; do echo $t >>.gitignore; done
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ . /main
+distance from (0, 0) to (3, 4) is 5
+distance from (0, 0) to (1, 1) is 1.41421
+distance from (0, 0) to (4, 5) is 6.40312
+distance from (3, 4) to (1, 1) is 3.60555
+distance from (3, 4) to (4, 5) is 1.41421
+distance from (1, 1) to (4, 5) is 5
+
+sizeof(double) = 8
+sizeof(Point) = 16
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ v im main.
+main.cc  main.o   
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ vim main.cc [K
+[?1000h[?1049h[?1h=[1;51r[23m[24m[0m[H[J[?25l[51;1H"main.cc" 44L, 1174C[1;1H[35m#include [0m[31m"point.hh"[0m
+
+[35m#include [0m[31m<iostream>[0m
+
+[34m//declare an array of points[0m
+[32mstatic[0m [32mconst[0m Point points[] = {
+  Point([31m0[0m, [31m0[0m), Point([31m3[0m, [31m4[0m), Point([31m1[0m, [31m1[0m), Point([31m4[0m, [31m5[0m),
+};
+[34m//use standard idiom to figure out number of elements in array[0m
+[32mstatic[0m [32mconstexpr[0m [32mauto[0m nPoints = [38;5;130msizeof[0m(points)/[38;5;130msizeof[0m(points[[31m0[0m]);
+
+[32mstatic[0m [32mvoid[0m
+outSizes(std::ostream& out) {
+  out << [31m"sizeof(double) = "[0m << [38;5;130msizeof[0m([32mdouble[0m) << std::endl;
+  out << [31m"sizeof(Point) = "[0m << [38;5;130msizeof[0m(Point) << std::endl;
+}
+
+[34m/** output pair-wise distance between all points in points[] to out. */[0m
+[32mstatic[0m [32mvoid[0m
+outDistances(std::ostream& out)
+{
+  [38;5;130mfor[0m ([32mauto[0m i = [31m0u[0m; i < nPoints - [31m1[0m; i++) {
+    Point pi = points[i];
+    [38;5;130mfor[0m ([32mauto[0m j = i + [31m1[0m; j < nPoints; j++) {[25;7HPoint pj = points[j];[26;7Hout << [31m"distance from "[0m << pi.toString()[27;11H<< [31m" to "[0m << pj.toString()[28;11H<< [31m" is "[0m << pi.distance(pj)[29;11H<< std::endl;
+    }
+  }
+}
+
+[32mint[0m main() {
+
+  [34m//instead of hardcoding std::cout in functions, we pass it as a param.
+[0m  [34m//so if we wanted to output to a file, the code for the functions
+[0m  [34m//would not need to change (the code in this function would change).[0m
+  std::ostream& out = std::cout;
+
+  outDistances(out); out << std::endl;
+
+  outSizes(out);
+}
+[94m~                                                                               [46;1H~                                                                               [47;1H~                                                                               [48;1H~                                                                               [49;1H~                                                                               [50;1H~                                                                               [0m[51;63H1,1[11CAll[1;1H[34h[?25h[?25l[51;53H:[1;1H[51;1H[K[51;1H:[34h[?25hq[?25l[34h[?25h[?25l[?1000l[51;1H[K[51;1H[?1l>[34h[?25h[?1049lalongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ l s
+main  main.cc  main.o  point.cc  point.hh  point.o
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ v im m[Kpoint.hh [K
+[?1000h[?1049h[?1h=[1;51r[23m[24m[0m[H[J[?25l[51;1H"point.hh" 26L, 654C[1;1H[35m#ifndef POINT_HH_
+#define POINT_HH_
+
+#include [0m[31m<string>[0m
+
+[32mstruct[0m Point {
+  [34m//for the purpose of this lab, these fields are public but const.
+[0m  [34m//Having them public makes it hard to change the reprentation
+[0m  [34m//from these cartesian coordinates to polar coordinates.[0m
+  [32mconst[0m [32mdouble[0m x, y;
+
+  [34m/** constructor */[0m
+  Point([32mdouble[0m x=[31m0[0m, [32mdouble[0m y=[31m0[0m) : x(x), y(y) { }
+
+  [34m/** return distance of this point from other point */
+[0m  [34m//the trailing const means that this function will not change
+[0m  [34m//this point[0m
+  [32mdouble[0m distance([32mconst[0m Point& other) [32mconst[0m;
+
+  [34m/** return a string representation of this point */[0m
+  std::string toString() [32mconst[0m;
+};[26;1H[35m#endif[0m [34m//ifndef POINT_HH_[0m
+[94m~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [38;1H~                                                                               [39;1H~                                                                               [40;1H~                                                                               [41;1H~                                                                               [42;1H~                                                                               [43;1H~                                                                               [44;1H~                                                                               [45;1H~                                                                               [46;1H~                                                                               [47;1H~                                                                               [48;1H~                                                                               [49;1H~                                                                               [50;1H~                                                                               [0m[51;63H1,1[11CAll[1;1H[34h[?25h[?25l[51;53H:[1;1H[51;1H[K[51;1H:[34h[?25hq[?25l[34h[?25h[?25l[?1000l[51;1H[K[51;1H[?1l>[34h[?25h[?1049lalongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ t ouch line.hh
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ touch line.hhM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvi[1Pm point.hhM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim point.hhM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch line.hhM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cx x[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc lear
+[H[Jalongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ l s
+line.hh  main  main.cc	main.o	point.cc  point.hh  point.o
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ l s[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[ClsM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CclearM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch line.hhM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv im point.hh
+[?1000h[?1049h[?1h=[1;51r[23m[24m[0m[H[J[?25l[51;1H"point.hh" 26L, 654C[1;1H[35m#ifndef POINT_HH_
+#define POINT_HH_
+
+#include [0m[31m<string>[0m
+
+[32mstruct[0m Point {
+  [34m//for the purpose of this lab, these fields are public but const.
+[0m  [34m//Having them public makes it hard to change the reprentation
+[0m  [34m//from these cartesian coordinates to polar coordinates.[0m
+  [32mconst[0m [32mdouble[0m x, y;
+
+  [34m/** constructor */[0m
+  Point([32mdouble[0m x=[31m0[0m, [32mdouble[0m y=[31m0[0m) : x(x), y(y) { }
+
+  [34m/** return distance of this point from other point */
+[0m  [34m//the trailing const means that this function will not change
+[0m  [34m//this point[0m
+  [32mdouble[0m distance([32mconst[0m Point& other) [32mconst[0m;
+
+  [34m/** return a string representation of this point */[0m
+  std::string toString() [32mconst[0m;
+};[26;1H[35m#endif[0m [34m//ifndef POINT_HH_[0m
+[94m~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [38;1H~                                                                               [39;1H~                                                                               [40;1H~                                                                               [41;1H~                                                                               [42;1H~                                                                               [43;1H~                                                                               [44;1H~                                                                               [45;1H~                                                                               [46;1H~                                                                               [47;1H~                                                                               [48;1H~                                                                               [49;1H~                                                                               [50;1H~                                                                               [0m[51;63H1,1[11CAll[1;1H[34h[?25h[?25l[51;53H:[1;1H[51;1H[K[51;1H:[34h[?25hq[?25l[34h[?25h[?25l[?1000l[51;1H[K[51;1H[?1l>[34h[?25h[?1049lalongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ vim point.hh
+[?1000h[?1049h[?1h=[1;51r[23m[24m[0m[H[J[?25l[51;1H"point.hh" 26L, 654C[1;1H[35m#ifndef POINT_HH_
+#define POINT_HH_
+
+#include [0m[31m<string>[0m
+
+[32mstruct[0m Point {
+  [34m//for the purpose of this lab, these fields are public but const.
+[0m  [34m//Having them public makes it hard to change the reprentation
+[0m  [34m//from these cartesian coordinates to polar coordinates.[0m
+  [32mconst[0m [32mdouble[0m x, y;
+
+  [34m/** constructor */[0m
+  Point([32mdouble[0m x=[31m0[0m, [32mdouble[0m y=[31m0[0m) : x(x), y(y) { }
+
+  [34m/** return distance of this point from other point */
+[0m  [34m//the trailing const means that this function will not change
+[0m  [34m//this point[0m
+  [32mdouble[0m distance([32mconst[0m Point& other) [32mconst[0m;
+
+  [34m/** return a string representation of this point */[0m
+  std::string toString() [32mconst[0m;
+};[26;1H[35m#endif[0m [34m//ifndef POINT_HH_[0m
+[94m~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [38;1H~                                                                               [39;1H~                                                                               [40;1H~                                                                               [41;1H~                                                                               [42;1H~                                                                               [43;1H~                                                                               [44;1H~                                                                               [45;1H~                                                                               [46;1H~                                                                               [47;1H~                                                                               [48;1H~                                                                               [49;1H~                                                                               [50;1H~                                                                               [0m[51;63H1,1[11CAll[1;1H[34h[?25h[?25l[51;53H:[1;1H[51;1H[K[51;1H:[34h[?25hq[?25l[34h[?25h[?25l[?1000l[51;1H[K[51;1H[?1l>[34h[?25h[?1049lalongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ vim point.hhM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim point.hhM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv im lo[Kine.hh 
+[?1000h[?1049h[?1h=[1;51r[23m[24m[0m[H[J[?25l[51;1H"line.hh" 0L, 0C[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [25;1H~                                                                               [26;1H~                                                                               [27;1H~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [38;1H~                                                                               [39;1H~                                                                               [40;1H~                                                                               [41;1H~                                                                               [42;1H~                                                                               [43;1H~                                                                               [44;1H~                                                                               [45;1H~                                                                               [46;1H~                                                                               [47;1H~                                                                               [48;1H~                                                                               [49;1H~                                                                               [50;1H~                                                                               [0m[51;63H0,0-1[9CAll[1;1H[34h[?25h[?25l[51;53Hi[1;1H[51;53H [1;1H[51;1H[1m-- INSERT --[0m[51;13H[K[51;63H0,1[11CAll[1;1H[34h[?25h[?25l#[51;63H1,2[1;2H[34h[?25h[?25li[51;65H3[1;3H[34h[?25h[?25ln[51;65H4[1;4H[34h[?25h[?25ld[51;65H5[1;5H[34h[?25h[?25le[51;65H6[1;6H[34h[?25h[?25lf[51;65H7[1;7H[34h[?25h[?25l[51;65H8[1;8H[34h[?25h[?25lH[51;65H9[1;9H[34h[?25h[?25lH[51;65H10[1;10H[34h[?25h[?25l[1;9H[K[51;65H9 [1;9H[34h[?25h[?25l[1;8H[K[51;65H8[1;8H[34h[?25h[?25lL[51;65H9[1;9H[34h[?25h[?25lI[51;65H10[1;10H[34h[?25h[?25lN[51;66H1[1;11H[34h[?25h[?25lE[51;66H2[1;12H[34h[?25h[?25l_[51;66H3[1;13H[34h[?25h[?25l_[51;66H4[1;14H[34h[?25h[?25l[1;13H[K[51;66H3[1;13H[34h[?25h[?25lH[51;66H4[1;14H[34h[?25h[?25lH[51;66H5[1;15H[34h[?25h[?25l_[51;66H6[1;16H[34h[?25h[51;1H[K[?25l[51;63H1,15[10CAll[1;15H[34h[?25h[?25l[51;53H`[1;15H[34h[?25h[?25l[51;54Hn[1;15H[51;1H[97m[41mE20: Mark not set[0m[51;53H[K[1;15H[51;63H1,15[10CAll[1;15H[34h[?25h[?25l[51;53H^[[1;15H[51;53H  [1;15H[51;53H^[[1;15H[51;53H  [1;15H[34h[?25h[?25l[51;53H~@k[1;15H[51;53H   [1;14H[51;66H4[1;14H[34h[?25h[?25l[51;53H~@k[1;14H[51;53H   [1;13H[51;66H3[1;13H[34h[?25h[?25l[51;53H~@k[1;13H[51;53H   [1;12H[51;66H2[1;12H[34h[?25h[?25l[51;53H~@k[1;12H[51;53H   [1;11H[51;66H1[1;11H[34h[?25h[?25l[51;53H~@k[1;11H[51;53H   [1;10H[51;66H0[1;10H[34h[?25h[?25l[51;53H~@k[1;10H[51;53H   [1;9H[51;65H9 [1;9H[34h[?25h[?25l[51;53H~@k[1;9H[51;53H   [1;8H[51;65H8[1;8H[34h[?25h[?25l[51;53H~@k[1;8H[51;53H   [1;7H[51;65H7[1;7H[34h[?25h[?25l[51;53H~@k[1;7H[51;53H   [1;6H[51;65H6[1;6H[34h[?25h[?25l[51;53H~@k[1;6H[51;53H   [1;5H[51;65H5[1;5H[34h[?25h[?25l[51;53H~@k[1;5H[51;53H   [1;4H[51;65H4[1;4H[34h[?25h[?25l[51;53H~@k[1;4H[51;53H   [1;3H[51;65H3[1;3H[34h[?25h[?25l[51;53Hi[1;3H[51;53H [1;3H[51;1H[1m-- INSERT --[0m[51;13H[K[51;63H1,3[11CAll[1;3H[34h[?25h[?25l[35m#ifndef LINE_HH_[0m[51;65H4[1;4H[34h[?25h[?25l[51;65H5[1;5H[34h[?25h[?25l[51;65H6[1;6H[34h[?25h[?25l[51;65H7[1;7H[34h[?25h[?25l[51;65H8[1;8H[34h[?25h[?25l[51;65H9[1;9H[34h[?25h[?25l[51;65H10[1;10H[34h[?25h[?25l[51;66H1[1;11H[34h[?25h[?25l[51;66H2[1;12H[34h[?25h[?25l[51;66H3[1;13H[34h[?25h[?25l[51;66H4[1;14H[34h[?25h[?25l[51;66H5[1;15H[34h[?25h[?25l[51;66H6[1;16H[34h[?25h[?25l[51;66H7[1;17H[34h[?25h[?25l[2;1H[K[51;63H2,1 [2;1H[34h[?25h[51;1H[K[2;1H[?25l[51;53H^[[2;1H[51;53H  [2;1H[51;63H2,0-1[9CAll[2;1H[34h[?25h[?25l[51;53Hi[2;1H[51;53H [2;1H[51;1H[1m-- INSERT --[0m[51;63H[K[51;63H2,1[11CAll[2;1H[34h[?25h[?25l#[51;65H2[2;2H[34h[?25h[?25ld[51;65H3[2;3H[34h[?25h[?25le[51;65H4[2;4H[34h[?25h[?25lf[51;65H5[2;5H[34h[?25h[?25li[51;65H6[2;6H[34h[?25h[?25ln[51;65H7[2;7H[34h[?25h[?25l[35m#define[0m[51;65H8[2;8H[34h[?25h[?25l[35m [0m[51;65H9[2;9H[34h[?25h[?25l[35mL[0m[51;65H10[2;10H[34h[?25h[?25l[35mI[0m[51;66H1[2;11H[34h[?25h[?25l[35mN[0m[51;66H2[2;12H[34h[?25h[?25l[35mE[0m[51;66H3[2;13H[34h[?25h[?25l[35m_[0m[51;66H4[2;14H[34h[?25h[?25l[35mH[0m[51;66H5[2;15H[34h[?25h[?25l[35mH[0m[51;66H6[2;16H[34h[?25h[?25l[35m_[0m[51;66H7[2;17H[34h[?25h[51;1H[K[?25l[51;63H2,16[10CAll[2;16H[34h[?25h[?25l[51;53H:[2;16H[51;53H[K[51;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l[51;3H[K[51;3H[34h[?25h[?25l"line.hh" 2L, 34C written[2;16H[51;63H2,16[10CAll[51;63H[K[51;63H2,16[10CAll[2;16H[34h[?25h[?25l[51;53Hv[2;16H[51;53H1[2;16H[51;1H[1m-- VISUAL --[0m[51;13H[K[51;53H1[2;16H[51;63H2,16[10CAll[2;16H[34h[?25h[?25l[51;53Hi[2;16H[34h[?25h[?25l[51;54Hm[2;16H[51;53H1 [2;16H[34h[?25h[?25l[51;53H<20>[2;16H[51;53H2   [2;17H[35m[47m_[0m[51;66H7[2;17H[34h[?25h[?25l[51;53H^[[2;17H[51;53H2 [2;17H[51;54H^[[2;17H[51;53H   [2;16H[35m_[0m[51;1H[K[51;63H2,16[10CAll[2;16H[34h[?25h[?25l[51;53H:[2;16H[51;53H[K[51;1H:[34h[?25hq[?25l[34h[?25h[?25l[?1000l[51;1H[K[51;1H[?1l>[34h[?25h[?1049lalongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ v i [Km main.cc
+[?1000h[?1049h[?1h=[1;51r[23m[24m[0m[H[J[?25l[51;1H"main.cc" 44L, 1174C[1;1H[35m#include [0m[31m"point.hh"[0m
+
+[35m#include [0m[31m<iostream>[0m
+
+[34m//declare an array of points[0m
+[32mstatic[0m [32mconst[0m Point points[] = {
+  Point([31m0[0m, [31m0[0m), Point([31m3[0m, [31m4[0m), Point([31m1[0m, [31m1[0m), Point([31m4[0m, [31m5[0m),
+};
+[34m//use standard idiom to figure out number of elements in array[0m
+[32mstatic[0m [32mconstexpr[0m [32mauto[0m nPoints = [38;5;130msizeof[0m(points)/[38;5;130msizeof[0m(points[[31m0[0m]);
+
+[32mstatic[0m [32mvoid[0m
+outSizes(std::ostream& out) {
+  out << [31m"sizeof(double) = "[0m << [38;5;130msizeof[0m([32mdouble[0m) << std::endl;
+  out << [31m"sizeof(Point) = "[0m << [38;5;130msizeof[0m(Point) << std::endl;
+}
+
+[34m/** output pair-wise distance between all points in points[] to out. */[0m
+[32mstatic[0m [32mvoid[0m
+outDistances(std::ostream& out)
+{
+  [38;5;130mfor[0m ([32mauto[0m i = [31m0u[0m; i < nPoints - [31m1[0m; i++) {
+    Point pi = points[i];
+    [38;5;130mfor[0m ([32mauto[0m j = i + [31m1[0m; j < nPoints; j++) {[25;7HPoint pj = points[j];[26;7Hout << [31m"distance from "[0m << pi.toString()[27;11H<< [31m" to "[0m << pj.toString()[28;11H<< [31m" is "[0m << pi.distance(pj)[29;11H<< std::endl;
+    }
+  }
+}
+
+[32mint[0m main() {
+
+  [34m//instead of hardcoding std::cout in functions, we pass it as a param.
+[0m  [34m//so if we wanted to output to a file, the code for the functions
+[0m  [34m//would not need to change (the code in this function would change).[0m
+  std::ostream& out = std::cout;
+
+  outDistances(out); out << std::endl;
+
+  outSizes(out);
+}
+[94m~                                                                               [46;1H~                                                                               [47;1H~                                                                               [48;1H~                                                                               [49;1H~                                                                               [50;1H~                                                                               [0m[51;63H1,1[11CAll[1;1H[34h[?25h[?1000l[?1000h[?1000l[?1000h[?1000l[?1000h[?1000l[?1000h[?1000l[?1000h[?1000l[?1000h[?25l[26;33H_ pi.toString()[51;63H26,34[26;34H[34h[?25h[?25l[51;67H3[26;33H[34h[?25h[?25l[51;53H:[26;33H[51;1H[K[51;1H:[34h[?25hw[?25l[34h[?25h[?25l[51;2H[K[51;2H[34h[?25hq[?25l[34h[?25h[?25l[97m[41mE37: No write since last change (add ! to override)[26;33H[0m[51;63H26,33[9CAll[26;33H[34h[?25h[?25l[51;53H~@k[26;33H[51;53H   [26;34H[51;67H4[26;34H[34h[?25h[?25l[51;53H~@k[26;34H[51;53H   [26;35H[51;67H5[26;35H[34h[?25h[?25l[51;53H~@k[26;35H[51;53H   [26;36H[51;67H6[26;36H[34h[?25h[?25l[51;53H~@k[26;36H[51;53H   [26;37H[51;67H7[26;37H[34h[?25h[?25l[51;53H~@k[26;37H[51;53H   [26;36H[51;67H6[26;36H[34h[?25h[?25l[51;53H~@k[26;36H[51;53H   [26;35H[51;67H5[26;35H[34h[?25h[?25l[51;53H~@k[26;35H[51;53H   [26;34H[51;67H4[26;34H[34h[?25h[?25l[51;53H~@k[26;34H[51;53H   [26;33H[51;67H3[26;33H[34h[?25h[?25l[51;53H~@k[26;33H[51;53H   [26;34H[51;67H4[26;34H[34h[?25h[?25l[51;53H~@k[26;34H[51;53H   [27;34H[51;64H7,27-34[27;34H[34h[?25h[?25l[51;53H~@k[27;34H[51;53H   [26;34H[51;64H6,34   [26;34H[34h[?25h[?25l[51;53Hi[26;34H[51;53H [26;34H[51;1H[1m-- INSERT --[0m[51;13H[K[51;63H26,34[9CAll[26;34H[34h[?25h[?25l pi.toString()[26;47H[K[51;67H3[26;33H[34h[?25h[?25l[51;67H4[26;34H[34h[?25h[51;1H[K[26;33H[?25l[51;53H^[[26;33H[51;53H  [26;34H[51;63H26,33[9CAllScript started on 2020-02-20 13:40:56-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="24"]
+bash: /home/umrigar/cs240/bin/student.profile: Permission denied
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4$ tmuxcd ../[K[3Plscd labs/lab4[4P../..ls[Kcd cs240als[Kcd cs240als[Kcd ../..labs/lab4ls[Kcd ../[2Ptmux[Kgedit pi[Koi[K[K[K[K[K[K[K[K[Kcd exercises/1-point/
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ g edit point.ccx[K point.hh line.cc line.hh main.cc
+
+(gedit:110698): Gtk-[1;33mWARNING[0m **: [34m13:43:45.512[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ m ak[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd[26P exercises/1-point/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctmux[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ../[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd labs/lab4[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ../[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctm[2Pux[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd exercises/1-point/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:110726): Gtk-[1;33mWARNING[0m **: [34m13:47:50.963[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ m ake -f ../m[KMakefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:5:10:[m[K [01;31m[Kfatal error: [m[Kpoint.hh: No such file or directory
+ #include [01;31m[K<point.hh>[m[K
+          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ l s
+line.cc  line.hh  main	main.cc  main.o  point.cc  point.hh  point.o
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ ls[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:110741): Gtk-[1;33mWARNING[0m **: [34m13:49:06.341[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a=0, Point b=0) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kmain.cc:50:3:[m[K [01;31m[Kerror: [m[K‘[01m[KoutSizes[m[K’ was not declared in this scope
+   [01;31m[KoutSizes[m[K(out);
+   [01;31m[K^~~~~~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:110756): Gtk-[1;33mWARNING[0m **: [34m13:49:40.930[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a= Point(0,0), Point b= Point(0,0)) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:110770): Gtk-[1;33mWARNING[0m **: [34m13:50:45.590[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:13:20:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   Line(Point a= (0,[01;35m[K0[m[K), Point b= (0,0)) : a(b), a(b) { }
+                    [01;35m[K^[m[K
+[01m[Kline.hh:13:36:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   Line(Point a= (0,0), Point b= (0,[01;35m[K0[m[K)) : a(b), a(b) { }
+                                    [01;35m[K^[m[K
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a= (0,0), Point b= (0,0)) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:110860): Gtk-[1;33mWARNING[0m **: [34m13:51:28.022[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:13:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K=[m[K’ token
+   Line[34m[K([m[Ka[01;31m[K=[m[KPoint(0,0), b=Point(0,0)) : a(b), a(b) { }
+       [34m[K~[m[K [01;31m[K^[m[K
+         [32m[K)[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outDistances(std::ostream&)[m[K’:
+[01m[Kmain.cc:37:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLine::Line(const Point&, const Point&)[m[K’
+     Line li = Line(points[i], points[i+1][01;31m[K)[m[K;
+                                          [01;31m[K^[m[K
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KLine::Line()[m[K’
+ struct [01;36m[KLine[m[K {
+        [01;36m[K^~~~[m[K
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Line::Line(const Line&)[m[K’
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Line::Line(Line&&)[m[K’
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:110876): Gtk-[1;33mWARNING[0m **: [34m13:52:48.447[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:13:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K=[m[K’ token
+   Line[34m[K([m[Ka[01;31m[K=[m[K(0,0), b=(0,0)) : a(b), a(b) { }
+       [34m[K~[m[K [01;31m[K^[m[K
+         [32m[K)[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outDistances(std::ostream&)[m[K’:
+[01m[Kmain.cc:37:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLine::Line(const Point&, const Point&)[m[K’
+     Line li = Line(points[i], points[i+1][01;31m[K)[m[K;
+                                          [01;31m[K^[m[K
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KLine::Line()[m[K’
+ struct [01;36m[KLine[m[K {
+        [01;36m[K^~~~[m[K
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Line::Line(const Line&)[m[K’
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Line::Line(Line&&)[m[K’
+[01m[Kline.hh:6:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:110896): Gtk-[1;33mWARNING[0m **: [34m13:54:33.630[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:13:18:[m[K [01;35m[Kwarning: [m[Kpassing NULL to non-pointer argument 1 of ‘[01m[KPoint::Point(double, double)[m[K’ [[01;35m[K-Wconversion-null[m[K]
+   Line(Point a = [01;35m[KNULL[m[K, Point b = NULL) : a(b), a(b) { }
+                  [01;35m[K^~~~[m[K
+[01m[Kline.hh:13:34:[m[K [01;35m[Kwarning: [m[Kpassing NULL to non-pointer argument 1 of ‘[01m[KPoint::Point(double, double)[m[K’ [[01;35m[K-Wconversion-null[m[K]
+   Line(Point a = NULL, Point b = [01;35m[KNULL[m[K) : a(b), a(b) { }
+                                  [01;35m[K^~~~[m[K
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a = NULL, Point b = NULL) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:110916): Gtk-[1;33mWARNING[0m **: [34m13:55:51.664[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a,Point b) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:110941): Gtk-[1;33mWARNING[0m **: [34m14:01:05.939[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a,Point b) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:111120): Gtk-[1;33mWARNING[0m **: [34m14:02:36.527[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a,Point b) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outDistances(std::ostream&)[m[K’:
+[01m[Kmain.cc:39:12:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[Kstruct Line[m[K’ argument given to ‘[01m[Kdelete[m[K’, expected pointer
+     delete [01;31m[Kli[m[K;
+            [01;31m[K^~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:111136): Gtk-[1;33mWARNING[0m **: [34m14:03:16.818[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a,Point b) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outDistance(Line)[m[K’:
+[01m[Kmain.cc:36:16:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   std::cout << [01;31m[Ki[m[K.toString() << " length " << i.distance() << std::endl;
+                [01;31m[K^[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kmain.cc:43:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kout[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   std::ostream& [01;35m[Kout[m[K = std::cout;
+                 [01;35m[K^~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:111159): Gtk-[1;33mWARNING[0m **: [34m14:06:33.888[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:14:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a,Point b) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outDistance(Line)[m[K’:
+[01m[Kmain.cc:36:16:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   std::cout << [01;31m[Ki[m[K.toString() << " length " << i.distance() << std::endl;
+                [01;31m[K^[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kmain.cc:43:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kout[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   std::ostream& [01;35m[Kout[m[K = std::cout;
+                 [01;35m[K^~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:111176): Gtk-[1;33mWARNING[0m **: [34m14:07:49.699[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:14:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a,Point b) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl s
+line.cc  line.hh  main	main.cc  main.o  point.cc  point.hh  point.o
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ ls[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ l [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr m line.hh [K\[K
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ k s
+bash: ks: command not found
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ l s
+line.cc  main  main.cc	main.o	point.cc  point.hh  point.o
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cks[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm line.hh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:2:10:[m[K [01;31m[Kfatal error: [m[Kline.hh: No such file or directory
+ #include [01;31m[K"line.hh"[m[K
+          [01;31m[K^~~~~~~~~[m[K
+compilation terminated.
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co uc[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct ouch line.hh
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ touch line.hh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cto[7Puch line.hh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cks[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm line.hh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:111249): Gtk-[1;33mWARNING[0m **: [34m14:10:25.805[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch line.hh[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a,Point b) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:111261): Gtk-[1;33mWARNING[0m **: [34m14:11:29.854[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+In file included from [01m[Kmain.cc:2[m[K:
+[01m[Kline.hh:[m[K In constructor ‘[01m[KLine::Line(Point, Point)[m[K’:
+[01m[Kline.hh:13:3:[m[K [01;31m[Kerror: [m[Kmultiple initializations given for ‘[01m[KLine::a[m[K’
+   [01;31m[KLine[m[K(Point a = Point() ,Point b = Point()) : a(b), a(b) { }
+   [01;31m[K^~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:111277): Gtk-[1;33mWARNING[0m **: [34m14:12:43.776[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+g++ -MT line.o -MMD -MP -MF .deps/line.d -g -Wall -std=c++17 -c line.cc
+In file included from [01m[Kline.cc:1[m[K:
+[01m[Kline.hh:10:9:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ does not name a type; did you mean ‘[01m[Kuint[m[K’?
+   const [01;31m[KPoint[m[K a, b;
+         [01;31m[K^~~~~[m[K
+         [32m[Kuint[m[K
+[01m[Kline.hh:13:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ka[m[K’
+   Line[34m[K([m[KPoint[01;31m[K [m[K[32m[Ka[m[K = Point(), Point b = Point()): a(a), b(b) {}
+       [34m[K~[m[K     [01;31m[K^[m[K[32m[K~[m[K
+             [32m[K)[m[K
+[01m[Kline.cc:[m[K In member function ‘[01m[Kdouble Line::distance() const[m[K’:
+[01m[Kline.cc:9:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+   const auto dx = [01;31m[Ka[m[K.x - b.x;
+                   [01;31m[K^[m[K
+[01m[Kline.cc:9:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kb[m[K’ was not declared in this scope
+   const auto dx = a.x - [01;31m[Kb[m[K.x;
+                         [01;31m[K^[m[K
+[01m[Kline.cc:[m[K In member function ‘[01m[Kstd::__cxx11::string Line::toString() const[m[K’:
+[01m[Kline.cc:17:15:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+   s << "(" << [01;31m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;31m[K^[m[K
+[01m[Kline.cc:17:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kb[m[K’ was not declared in this scope
+   s << "(" << a << ") -- (" << [01;31m[Kb[m[K << ")"; //normal (x, y) format
+                                [01;31m[K^[m[K
+make: *** [../Makefile:48: line.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc
+
+(gedit:111301): Gtk-[1;33mWARNING[0m **: [34m14:14:59.026[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc &
+[1] 111314
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ gedit point.cc point.hh line.cc line.hh main.cc &[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[27Pke -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+g++ -MT line.o -MMD -MP -MF .deps/line.d -g -Wall -std=c++17 -c line.cc
+[01m[Kline.cc:[m[K In member function ‘[01m[Kstd::__cxx11::string Line::toString() const[m[K’:
+[01m[Kline.cc:17:12:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::basic_ostream<char>[m[K’ and ‘[01m[Kconst Point[m[K’)
+   [01;31m[Ks << "(" << a[m[K << ") -- (" << b << ")"; //normal (x, y) format
+   [01;31m[K~~~~~~~~~^~~~[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:108:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(__ostream_type& (*__pf)(__ostream_type&))
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:108:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)[m[K’}
+[01m[K/usr/include/c++/8/ostream:117:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>][m[K’
+       [01;36m[Koperator[m[K<<(__ios_type& (*__pf)(__ios_type&))
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:117:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)[m[K’ {aka ‘[01m[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)[m[K’}
+[01m[K/usr/include/c++/8/ostream:127:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(ios_base& (*__pf) (ios_base&))
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:127:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kstd::ios_base& (*)(std::ios_base&)[m[K’
+[01m[K/usr/include/c++/8/ostream:166:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(long __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:166:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong int[m[K’
+[01m[K/usr/include/c++/8/ostream:170:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(unsigned long __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:170:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong unsigned int[m[K’
+[01m[K/usr/include/c++/8/ostream:174:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(bool __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:174:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kbool[m[K’
+In file included from [01m[K/usr/include/c++/8/ostream:693[m[K,
+                 from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/bits/ostream.tcc:91:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/ostream.tcc:91:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kshort int[m[K’
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:181:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(unsigned short __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:181:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kshort unsigned int[m[K’
+In file included from [01m[K/usr/include/c++/8/ostream:693[m[K,
+                 from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/bits/ostream.tcc:105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/ostream.tcc:105:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kint[m[K’
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:192:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(unsigned int __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:192:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kunsigned int[m[K’
+[01m[K/usr/include/c++/8/ostream:201:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(long long __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:201:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong long int[m[K’
+[01m[K/usr/include/c++/8/ostream:205:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(unsigned long long __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:205:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong long unsigned int[m[K’
+[01m[K/usr/include/c++/8/ostream:220:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(double __f)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:220:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kdouble[m[K’
+[01m[K/usr/include/c++/8/ostream:224:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(float __f)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:224:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kfloat[m[K’
+[01m[K/usr/include/c++/8/ostream:232:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(long double __f)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:232:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong double[m[K’
+[01m[K/usr/include/c++/8/ostream:245:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(const void* __p)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:245:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kconst void*[m[K’
+In file included from [01m[K/usr/include/c++/8/ostream:693[m[K,
+                 from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/bits/ostream.tcc:119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>][m[K’
+     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/ostream.tcc:119:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__streambuf_type*[m[K’ {aka ‘[01m[Kstd::basic_streambuf<char>*[m[K’}
+In file included from [01m[K/usr/include/c++/8/bits/basic_string.h:48[m[K,
+                 from [01m[K/usr/include/c++/8/string:52[m[K,
+                 from [01m[Kpoint.hh:4[m[K,
+                 from [01m[Kline.hh:4[m[K,
+                 from [01m[Kline.cc:1[m[K:
+[01m[K/usr/include/c++/8/string_view:545:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::basic_string_view<_CharT, _Traits>)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/string_view:545:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  ‘[01m[KPoint[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/string:52[m[K,
+                 from [01m[Kpoint.hh:4[m[K,
+                 from [01m[Kline.hh:4[m[K,
+                 from [01m[Kline.cc:1[m[K:
+[01m[K/usr/include/c++/8/bits/basic_string.h:6323:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/basic_string.h:6323:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst Point[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/bits/ios_base.h:46[m[K,
+                 from [01m[K/usr/include/c++/8/ios:42[m[K,
+                 from [01m[K/usr/include/c++/8/istream:38[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/system_error:217:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/system_error:217:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst std::error_code&[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:497:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:497:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_CharT[m[K’ (‘[01m[Kchar[m[K’ and ‘[01m[KPoint[m[K’)
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:502:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:502:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kchar[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:508:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:508:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kchar[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:514:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:514:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Ksigned char[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:519:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:519:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kunsigned char[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:539:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:539:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[KPoint[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/ostream:693[m[K,
+                 from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst char*[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:556:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:556:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst char*[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:569:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:569:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst signed char*[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:574:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:574:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst unsigned char*[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:682:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)[m[K’
+     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:682:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+/usr/include/c++/8/ostream: In substitution of ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = Point][m[K’:
+[01m[Kline.cc:17:15:[m[K   required from here
+[01m[K/usr/include/c++/8/ostream:682:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::basic_ostream<char>&>[m[K’
+make: *** [../Makefile:48: line.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ [H[2Jalongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ c lear
+[H[2J[3Jalongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ clear[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile 
+g++ -MT line.o -MMD -MP -MF .deps/line.d -g -Wall -std=c++17 -c line.cc
+[01m[Kline.cc:[m[K In member function ‘[01m[Kstd::__cxx11::string Line::toString() const[m[K’:
+[01m[Kline.cc:17:12:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::basic_ostream<char>[m[K’ and ‘[01m[Kconst Point[m[K’)
+   [01;31m[Ks << "(" << a[m[K << ") -- (" << b << ")"; //normal (x, y) format
+   [01;31m[K~~~~~~~~~^~~~[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:108:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(__ostream_type& (*__pf)(__ostream_type&))
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:108:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)[m[K’}
+[01m[K/usr/include/c++/8/ostream:117:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>][m[K’
+       [01;36m[Koperator[m[K<<(__ios_type& (*__pf)(__ios_type&))
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:117:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)[m[K’ {aka ‘[01m[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)[m[K’}
+[01m[K/usr/include/c++/8/ostream:127:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(ios_base& (*__pf) (ios_base&))
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:127:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kstd::ios_base& (*)(std::ios_base&)[m[K’
+[01m[K/usr/include/c++/8/ostream:166:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(long __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:166:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong int[m[K’
+[01m[K/usr/include/c++/8/ostream:170:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(unsigned long __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:170:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong unsigned int[m[K’
+[01m[K/usr/include/c++/8/ostream:174:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(bool __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:174:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kbool[m[K’
+In file included from [01m[K/usr/include/c++/8/ostream:693[m[K,
+                 from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/bits/ostream.tcc:91:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/ostream.tcc:91:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kshort int[m[K’
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:181:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(unsigned short __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:181:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kshort unsigned int[m[K’
+In file included from [01m[K/usr/include/c++/8/ostream:693[m[K,
+                 from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/bits/ostream.tcc:105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/ostream.tcc:105:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kint[m[K’
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:192:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(unsigned int __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:192:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kunsigned int[m[K’
+[01m[K/usr/include/c++/8/ostream:201:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(long long __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:201:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong long int[m[K’
+[01m[K/usr/include/c++/8/ostream:205:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(unsigned long long __n)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:205:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong long unsigned int[m[K’
+[01m[K/usr/include/c++/8/ostream:220:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(double __f)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:220:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kdouble[m[K’
+[01m[K/usr/include/c++/8/ostream:224:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(float __f)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:224:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kfloat[m[K’
+[01m[K/usr/include/c++/8/ostream:232:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(long double __f)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:232:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Klong double[m[K’
+[01m[K/usr/include/c++/8/ostream:245:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+       [01;36m[Koperator[m[K<<(const void* __p)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:245:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kconst void*[m[K’
+In file included from [01m[K/usr/include/c++/8/ostream:693[m[K,
+                 from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/bits/ostream.tcc:119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>][m[K’
+     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/ostream.tcc:119:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst Point[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__streambuf_type*[m[K’ {aka ‘[01m[Kstd::basic_streambuf<char>*[m[K’}
+In file included from [01m[K/usr/include/c++/8/bits/basic_string.h:48[m[K,
+                 from [01m[K/usr/include/c++/8/string:52[m[K,
+                 from [01m[Kpoint.hh:4[m[K,
+                 from [01m[Kline.hh:4[m[K,
+                 from [01m[Kline.cc:1[m[K:
+[01m[K/usr/include/c++/8/string_view:545:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::basic_string_view<_CharT, _Traits>)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/string_view:545:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  ‘[01m[KPoint[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/string:52[m[K,
+                 from [01m[Kpoint.hh:4[m[K,
+                 from [01m[Kline.hh:4[m[K,
+                 from [01m[Kline.cc:1[m[K:
+[01m[K/usr/include/c++/8/bits/basic_string.h:6323:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/basic_string.h:6323:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst Point[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/bits/ios_base.h:46[m[K,
+                 from [01m[K/usr/include/c++/8/ios:42[m[K,
+                 from [01m[K/usr/include/c++/8/istream:38[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/system_error:217:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/system_error:217:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst std::error_code&[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:497:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:497:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_CharT[m[K’ (‘[01m[Kchar[m[K’ and ‘[01m[KPoint[m[K’)
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:502:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:502:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kchar[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:508:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:508:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kchar[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:514:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:514:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Ksigned char[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:519:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:519:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kunsigned char[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:539:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:539:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[KPoint[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/ostream:693[m[K,
+                 from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst char*[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:556:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:556:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst char*[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:569:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:569:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst signed char*[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:574:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:574:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Kline.cc:17:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((const Line*)this)->Line::a[m[K’ (type ‘[01m[Kconst Point[m[K’) to type ‘[01m[Kconst unsigned char*[m[K’
+   s << "(" << [01;36m[Ka[m[K << ") -- (" << b << ")"; //normal (x, y) format
+               [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/istream:39[m[K,
+                 from [01m[K/usr/include/c++/8/sstream:38[m[K,
+                 from [01m[Kline.cc:5[m[K:
+[01m[K/usr/include/c++/8/ostream:682:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)[m[K’
+     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/ostream:682:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+/usr/include/c++/8/ostream: In substitution of ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = Point][m[K’:
+[01m[Kline.cc:17:15:[m[K   required from here
+[01m[K/usr/include/c++/8/ostream:682:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::basic_ostream<char>&>[m[K’
+make: *** [../Makefile:48: line.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ 
+(gedit:111314): Gtk-[1;33mWARNING[0m **: [34m14:17:51.428[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile 
+g++ -MT line.o -MMD -MP -MF .deps/line.d -g -Wall -std=c++17 -c line.cc
+[01m[Kline.cc:[m[K In member function ‘[01m[Kdouble Line::distance() const[m[K’:
+[01m[Kline.cc:9:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+   return [01;31m[Kx[m[K.distance(y);
+          [01;31m[K^[m[K
+[01m[Kline.cc:9:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope
+   return x.distance([01;31m[Ky[m[K);
+                     [01;31m[K^[m[K
+[01m[Kline.cc:9:21:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kyn[m[K’
+   return x.distance([01;36m[Ky[m[K);
+                     [01;36m[K^[m[K
+                     [32m[Kyn[m[K
+make: *** [../Makefile:48: line.o] Error 1
+[1]+  Done                    gedit point.cc point.hh line.cc line.hh main.cc
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc &
+[1] 111344
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ 
+(gedit:111344): Gtk-[1;33mWARNING[0m **: [34m14:18:41.054[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+gedit point.cc point.hh line.cc line.hh main.cc &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[29Pke -f ../Makefile 
+g++ -MT line.o -MMD -MP -MF .deps/line.d -g -Wall -std=c++17 -c line.cc
+g++ point.o main.o line.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main point.o main.o line.o; do echo $t >>.gitignore; done
+[1]+  Done                    gedit point.cc point.hh line.cc line.hh main.cc
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ . /main
+((0, 0)) -- ((3, 4)) length 5
+((1, 1)) -- ((4, 5)) length 5
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ ./main[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit point.cc point.hh line.cc line.hh main.cc &
+[1] 111366
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ 
+(gedit:111366): Gtk-[1;33mWARNING[0m **: [34m14:19:20.429[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+gedit point.cc point.hh line.cc line.hh main.cc &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outDistances(std::ostream&)[m[K’:
+[01m[Kmain.cc:38:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kl[m[K’ was not declared in this scope
+      std::cout << [01;31m[Kl[m[K.toString() << " length " << l.distance() << std::endl;
+                   [01;31m[K^[m[K
+[01m[Kmain.cc:38:19:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kli[m[K’
+      std::cout << [01;36m[Kl[m[K.toString() << " length " << l.distance() << std::endl;
+                   [01;36m[K^[m[K
+                   [32m[Kli[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outDistances(std::ostream&)[m[K’:
+[01m[Kmain.cc:38:21:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KtoString[m[K’ in ‘[01m[Ki[m[K’, which is of non-class type ‘[01m[Kunsigned int[m[K’
+      std::cout << i.[01;31m[KtoString[m[K() << " length " << li.distance() << std::endl;
+                     [01;31m[K^~~~~~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+g++ point.o main.o line.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main point.o main.o line.o; do echo $t >>.gitignore; done
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ . /main
+((0, 0)) -- ((3, 4)) length 5
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ ./main[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:19:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+ /** output pair-wise distance between all points in points[] to out. */
+  
+g++ point.o main.o line.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main point.o main.o line.o; do echo $t >>.gitignore; done
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[K
+((0, 0)) -- ((3, 4)) length 5
+((1, 1)) -- ((4, 5)) length 5
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ ./main[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -f ../Makefile 
+g++ -MT line.o -MMD -MP -MF .deps/line.d -g -Wall -std=c++17 -c line.cc
+g++ point.o main.o line.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main point.o main.o line.o; do echo $t >>.gitignore; done
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ make -f ../Makefile [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main[K
+(0, 0) -- (3, 4) length 5
+(1, 1) -- (4, 5) length 5
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point$ c d ../2-shape/
+[1]+  Done                    gedit point.cc point.hh line.cc line.hh main.cc  (wd: /import/linux/home1/alongo5/i240a/submit/lab4/exercises/1-point)
+(wd now: /import/linux/home1/alongo5/i240a/submit/lab4/exercises/2-shape)
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/2-shape$ l s\\[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl s
+main.cc  point.cc  point.hh  shapes.hh	tostring.cc  tostring.hh
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/2-shape$ l s
+main.cc  point.cc  point.hh  shapes.hh	tostring.cc  tostring.hh
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/2-shape$ l s[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv im shapes.hh 
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"shapes.hh" 68L, 1758C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[31m"point.hh"[m
+[35m#include [m[31m"tostring.hh"[m
+
+[35m#define _USE_MATH_DEFINES [m[31m1[m
+[35m#include [m[31m<cmath>[m
+[35m#include [m[31m<string>[m
+[35m#include [m[31m<sstream>[m
+
+[34m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[32mclass[m Shape : [38;5;130mpublic[m ToString {
+[38;5;130mpublic[m:
+  [32mvirtual[m [32mdouble[m perimeter() [32mconst[m = [31m0[m;
+};
+
+[34m/* A Circle is a concrete Shape */[m
+[32mstruct[m Circle : [38;5;130mpublic[m Shape {
+  [32mconst[m [32mdouble[m radius;[24;63H1,1[11CTop]2;shapes.hh (~/projects/i240a/submit/lab4/exercises/2-shape) - VIM]1;shapes.hh[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;[24;63H1,1[11CTop"shapes.hh" 68L, 1758C[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;[25;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;[26;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m[27;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())[28;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)[29;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m[32;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {[36;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;[38;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();[39;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }[41;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};[42;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};[43;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};
+
+[96m/* A Rectangle is another concrete Shape */[m
+[38;5;121mstruct[m Rectangle : [93mpublic[m Shape {[45;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};
+
+[96m/* A Rectangle is another concrete Shape */[m
+[38;5;121mstruct[m Rectangle : [93mpublic[m Shape {
+  [38;5;121mconst[m Point topLeft, bottomRight;[46;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};
+
+[96m/* A Rectangle is another concrete Shape */[m
+[38;5;121mstruct[m Rectangle : [93mpublic[m Shape {
+  [38;5;121mconst[m Point topLeft, bottomRight;[47;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};
+
+[96m/* A Rectangle is another concrete Shape */[m
+[38;5;121mstruct[m Rectangle : [93mpublic[m Shape {
+  [38;5;121mconst[m Point topLeft, bottomRight;
+
+  [96m/** constructor: no default value for parameters */[m[48;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};
+
+[96m/* A Rectangle is another concrete Shape */[m
+[38;5;121mstruct[m Rectangle : [93mpublic[m Shape {
+  [38;5;121mconst[m Point topLeft, bottomRight;
+
+  [96m/** constructor: no default value for parameters */[m
+  Rectangle(Point p1, Point p2) : topLeft(p1), bottomRight(p2) {}[49;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};
+
+[96m/* A Rectangle is another concrete Shape */[m
+[38;5;121mstruct[m Rectangle : [93mpublic[m Shape {
+  [38;5;121mconst[m Point topLeft, bottomRight;
+
+  [96m/** constructor: no default value for parameters */[m
+  Rectangle(Point p1, Point p2) : topLeft(p1), bottomRight(p2) {}[50;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};
+
+[96m/* A Rectangle is another concrete Shape */[m
+[38;5;121mstruct[m Rectangle : [93mpublic[m Shape {
+  [38;5;121mconst[m Point topLeft, bottomRight;
+
+  [96m/** constructor: no default value for parameters */[m
+  Rectangle(Point p1, Point p2) : topLeft(p1), bottomRight(p2) {}
+
+  [96m/** return perimeter of this rectangle */[m[51;63H1,1[11CTop[1;1H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[38;5;81m#ifndef SHAPES_HH_
+#define SHAPES_HH_
+
+#include [m[95m"point.hh"[m
+[38;5;81m#include [m[95m"tostring.hh"[m
+
+[38;5;81m#define _USE_MATH_DEFINES [m[95m1[m
+[38;5;81m#include [m[95m<cmath>[m
+[38;5;81m#include [m[95m<string>[m
+[38;5;81m#include [m[95m<sstream>[m
+
+[96m/* A Shape will implement a toString() as well as a perimeter()
+ * method.  Since both methods are pure virtual, Shape is an
+ * abstract class and cannot be instantiated.
+ */[m
+[38;5;121mclass[m Shape : [93mpublic[m ToString {
+[93mpublic[m:
+  [38;5;121mvirtual[m [38;5;121mdouble[m perimeter() [38;5;121mconst[m = [95m0[m;
+};
+
+[96m/* A Circle is a concrete Shape */[m
+[38;5;121mstruct[m Circle : [93mpublic[m Shape {
+  [38;5;121mconst[m [38;5;121mdouble[m radius;
+  [38;5;121mconst[m Point origin;
+
+  [96m/** constructor: default will build unit circle */[m
+  Circle([38;5;121mdouble[m radius=[95m1[m, [38;5;121mconst[m Point& point=Point())
+    : radius(radius), origin(point)
+  {}
+
+  [96m/** return perimeter of this circle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m { [93mreturn[m [95m2[m * [95mM_PI[m * radius; }
+
+  [96m/** return string representation of this circle */[m
+  std::string toString() [38;5;121mconst[m {
+    std::stringstream s;
+    s << [95m"Circle["[m << origin << [95m", "[m << radius << [95m"]"[m;
+    [93mreturn[m s.str();
+  }
+
+};
+
+[96m/* A Rectangle is another concrete Shape */[m
+[38;5;121mstruct[m Rectangle : [93mpublic[m Shape {
+  [38;5;121mconst[m Point topLeft, bottomRight;
+
+  [96m/** constructor: no default value for parameters */[m
+  Rectangle(Point p1, Point p2) : topLeft(p1), bottomRight(p2) {}
+
+  [96m/** return perimeter of this rectangle */[m
+  [38;5;121mdouble[m perimeter() [38;5;121mconst[m {[52;63H1,1[11CTop[1;1H[?25h[?25l[52;53H:[1;1H[52;53H[K[52;1H:[?2004h[?25hq[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[52;1H[K[52;1H[?2004l[?1l>[?25h[?1049l[23;0;0talongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/2-shape$ g edit shapes.hh 
+
+(gedit:111453): Gtk-[1;33mWARNING[0m **: [34m14:30:54.142[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/2-shape$ g edit main.cc 
+
+(gedit:111467): Gtk-[1;33mWARNING[0m **: [34m14:33:20.305[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/2-shape$ gedit main.cc [C[C[C[C[C[2@shapes.hh[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvi[2Pm[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cge[2@dit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pmain.cc[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm ake -f ../m[KMakefile 
+g++ -MT tostring.o -MMD -MP -MF .deps/tostring.d -g -Wall -std=c++17 -c tostring.cc
+g++ -MT point.o -MMD -MP -MF .deps/point.d -g -Wall -std=c++17 -c point.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ tostring.o point.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main tostring.o point.o main.o; do echo $t >>.gitignore; done
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/2-shape$ . /main
+Circle[(0, 0), 1] perimeter: 6.28319 area: 3.14159
+Rectangle[(1, 1), (4, 5)] perimeter: 14 area: 12
+Circle[(1, 1), 2] perimeter: 12.5664 area: 12.5664
+Rectangle[(0, 0), (5, 4)] perimeter: 18 area: 20
+
+sizeof(double) = 8
+sizeof(Point) = 24
+
+sizeof(ToString) = 8
+sizeof(Shape) = 8
+sizeof(Circle) = 40
+sizeof(Rectangle) = 56
+
+alongo5@g7-22:/import/linux/home1/alongo5/i240a/submit/lab4/exercises/2-shape$ exit
+
+Script done on 2020-02-20 14:35:54-05:00 [COMMAND_EXIT_CODE="0"]
