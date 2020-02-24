@@ -8,6 +8,8 @@
 
 
 class Expr : public ToString {
+  public:
+    virtual int eval() const = 0;
 };
 
 //ExprPtr is an alias for a smart shared ptr to an Expr.
@@ -28,6 +30,8 @@ public:
 
   
   std::string toString() const;
+
+  int eval() const { return value; }
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
@@ -52,6 +56,7 @@ public:
   }
 
   std::string toString() const;
+  int eval() const { return left->eval() + right->eval(); }
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
@@ -74,6 +79,7 @@ public:
   }
 
   std::string toString() const;
+  int eval () const { return left->eval() - right->eval(); }
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
@@ -96,6 +102,7 @@ public:
   }
 
   std::string toString() const;
+  int eval() const { return left->eval() * right->eval(); }
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
@@ -117,6 +124,7 @@ public:
   }
 
   std::string toString() const;
+  int eval() const { return left->eval() / right->eval(); }
 
   //use Private to ensure this constructor cannot be called from outside
   //this class even though it is public
