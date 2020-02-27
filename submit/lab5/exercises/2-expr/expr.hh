@@ -10,6 +10,7 @@
 class Expr : public ToString {
 public:
   virtual int eval() const = 0;
+  virtual std::string dcCode() const = 0;
 };
 
 //ExprPtr is an alias for a smart shared ptr to an Expr.
@@ -36,6 +37,7 @@ public:
   IntExpr(int val, Private x) : value(val) { }
 
   int eval() const { return value; }
+  std::string dcCode() const { return std::to_string(value) + " "; }
 
 }; //IntExpr
 
@@ -64,6 +66,7 @@ public:
   }
 
   int eval() const { return left->eval() + right->eval(); }
+  std::string dcCode() const {return left->dcCode() + right->dcCode() + "+ ";}
   
 }; //AddExpr
 
@@ -89,6 +92,7 @@ public:
   }
 
   int eval() const { return left->eval() - right->eval(); }
+  std::string dcCode() const {return left->dcCode() + right->dcCode() + "- ";}
   
 }; //SubExpr
 
@@ -114,6 +118,7 @@ public:
   }
 
   int eval() const { return left->eval() * right->eval(); }
+  std::string dcCode() const {return left->dcCode() + right->dcCode() + "* ";}
   
 }; //MulExpr
 
@@ -138,6 +143,7 @@ public:
   }
 
   int eval() const { return left->eval() / right->eval(); }
+  std::string dcCode() const {return left->dcCode() + right->dcCode() + "/ ";}
 
 }; //DivExpr
 

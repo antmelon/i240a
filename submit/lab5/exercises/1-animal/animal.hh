@@ -6,6 +6,7 @@ public:
   virtual ~Animal() {}
 
   virtual std::string says()  const = 0;
+  virtual std::string eats() const = 0;
   const std::string name;
 
   
@@ -18,6 +19,9 @@ public:
   std::string says() const {
     return "woof";
   }
+  std::string eats() const{
+    return "meat";
+  }
   
 };
 
@@ -28,6 +32,9 @@ public:
   std::string says() const {
     return "meow";
   }
+  std::string eats() const{
+    return "fish";
+  }
   
 };
 
@@ -37,6 +44,9 @@ public:
 
   std::string says() const {
     return "moo";
+  }
+  std::string eats() const {
+    return "grass";
   }
   
 };
