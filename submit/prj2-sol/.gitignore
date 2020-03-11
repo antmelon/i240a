@@ -1,5 +1,4 @@
-command.cc
-command.hh
+
 seq-test.cc
 test.data
 overflow-array.data
