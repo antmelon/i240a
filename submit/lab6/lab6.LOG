@@ -1,0 +1,833 @@
+Script started on 2020-03-12 13:15:12-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="50"]
+]0;alongo5@g7-10: ~/i240a/submit/lab6[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6[01;31m (lab6)[00m$ cd .[K[K ~
+]0;alongo5@g7-10: ~[01;32malongo5@g7-10[00m:[01;34m~[01;31m[00m$ cd s[Kcs240
+]0;alongo5@g7-10: ~/cs240[01;32malongo5@g7-10[00m:[01;34m~/cs240[01;31m (master)[00m$ git pull
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.203' to the list of known hosts.
+remote: Enumerating objects: 220, done.[K
+remote: Counting objects:   0% (1/220)   [Kremote: Counting objects:   1% (3/220)   [Kremote: Counting objects:   2% (5/220)   [Kremote: Counting objects:   3% (7/220)   [Kremote: Counting objects:   4% (9/220)   [Kremote: Counting objects:   5% (11/220)   [Kremote: Counting objects:   6% (14/220)   [Kremote: Counting objects:   7% (16/220)   [Kremote: Counting objects:   8% (18/220)   [Kremote: Counting objects:   9% (20/220)   [Kremote: Counting objects:  10% (22/220)   [Kremote: Counting objects:  11% (25/220)   [Kremote: Counting objects:  12% (27/220)   [Kremote: Counting objects:  13% (29/220)   [Kremote: Counting objects:  14% (31/220)   [Kremote: Counting objects:  15% (33/220)   [Kremote: Counting objects:  16% (36/220)   [Kremote: Counting objects:  17% (38/220)   [Kremote: Counting objects:  18% (40/220)   [Kremote: Counting objects:  19% (42/220)   [Kremote: Counting objects:  20% (44/220)   [Kremote: Counting objects:  21% (47/220)   [Kremote: Counting objects:  22% (49/220)   [Kremote: Counting objects:  23% (51/220)   [Kremote: Counting objects:  24% (53/220)   [Kremote: Counting objects:  25% (55/220)   [Kremote: Counting objects:  26% (58/220)   [Kremote: Counting objects:  27% (60/220)   [Kremote: Counting objects:  28% (62/220)   [Kremote: Counting objects:  29% (64/220)   [Kremote: Counting objects:  30% (66/220)   [Kremote: Counting objects:  31% (69/220)   [Kremote: Counting objects:  32% (71/220)   [Kremote: Counting objects:  33% (73/220)   [Kremote: Counting objects:  34% (75/220)   [Kremote: Counting objects:  35% (77/220)   [Kremote: Counting objects:  36% (80/220)   [Kremote: Counting objects:  37% (82/220)   [Kremote: Counting objects:  38% (84/220)   [Kremote: Counting objects:  39% (86/220)   [Kremote: Counting objects:  40% (88/220)   [Kremote: Counting objects:  41% (91/220)   [Kremote: Counting objects:  42% (93/220)   [Kremote: Counting objects:  43% (95/220)   [Kremote: Counting objects:  44% (97/220)   [Kremote: Counting objects:  45% (99/220)   [Kremote: Counting objects:  46% (102/220)   [Kremote: Counting objects:  47% (104/220)   [Kremote: Counting objects:  48% (106/220)   [Kremote: Counting objects:  49% (108/220)   [Kremote: Counting objects:  50% (110/220)   [Kremote: Counting objects:  51% (113/220)   [Kremote: Counting objects:  52% (115/220)   [Kremote: Counting objects:  53% (117/220)   [Kremote: Counting objects:  54% (119/220)   [Kremote: Counting objects:  55% (121/220)   [Kremote: Counting objects:  56% (124/220)   [Kremote: Counting objects:  57% (126/220)   [Kremote: Counting objects:  58% (128/220)   [Kremote: Counting objects:  59% (130/220)   [Kremote: Counting objects:  60% (132/220)   [Kremote: Counting objects:  61% (135/220)   [Kremote: Counting objects:  62% (137/220)   [Kremote: Counting objects:  63% (139/220)   [Kremote: Counting objects:  64% (141/220)   [Kremote: Counting objects:  65% (143/220)   [Kremote: Counting objects:  66% (146/220)   [Kremote: Counting objects:  67% (148/220)   [Kremote: Counting objects:  68% (150/220)   [Kremote: Counting objects:  69% (152/220)   [Kremote: Counting objects:  70% (154/220)   [Kremote: Counting objects:  71% (157/220)   [Kremote: Counting objects:  72% (159/220)   [Kremote: Counting objects:  73% (161/220)   [Kremote: Counting objects:  74% (163/220)   [Kremote: Counting objects:  75% (165/220)   [Kremote: Counting objects:  76% (168/220)   [Kremote: Counting objects:  77% (170/220)   [Kremote: Counting objects:  78% (172/220)   [Kremote: Counting objects:  79% (174/220)   [Kremote: Counting objects:  80% (176/220)   [Kremote: Counting objects:  81% (179/220)   [Kremote: Counting objects:  82% (181/220)   [Kremote: Counting objects:  83% (183/220)   [Kremote: Counting objects:  84% (185/220)   [Kremote: Counting objects:  85% (187/220)   [Kremote: Counting objects:  86% (190/220)   [Kremote: Counting objects:  87% (192/220)   [Kremote: Counting objects:  88% (194/220)   [Kremote: Counting objects:  89% (196/220)   [Kremote: Counting objects:  90% (198/220)   [Kremote: Counting objects:  91% (201/220)   [Kremote: Counting objects:  92% (203/220)   [Kremote: Counting objects:  93% (205/220)   [Kremote: Counting objects:  94% (207/220)   [Kremote: Counting objects:  95% (209/220)   [Kremote: Counting objects:  96% (212/220)   [Kremote: Counting objects:  97% (214/220)   [Kremote: Counting objects:  98% (216/220)   [Kremote: Counting objects:  99% (218/220)   [Kremote: Counting objects: 100% (220/220)   [Kremote: Counting objects: 100% (220/220), done.[K
+remote: Compressing objects:   0% (1/167)   [Kremote: Compressing objects:   1% (2/167)   [Kremote: Compressing objects:   2% (4/167)   [Kremote: Compressing objects:   3% (6/167)   [Kremote: Compressing objects:   4% (7/167)   [Kremote: Compressing objects:   5% (9/167)   [Kremote: Compressing objects:   6% (11/167)   [Kremote: Compressing objects:   7% (12/167)   [Kremote: Compressing objects:   8% (14/167)   [Kremote: Compressing objects:   9% (16/167)   [Kremote: Compressing objects:  10% (17/167)   [Kremote: Compressing objects:  11% (19/167)   [Kremote: Compressing objects:  12% (21/167)   [Kremote: Compressing objects:  13% (22/167)   [Kremote: Compressing objects:  14% (24/167)   [Kremote: Compressing objects:  15% (26/167)   [Kremote: Compressing objects:  16% (27/167)   [Kremote: Compressing objects:  17% (29/167)   [Kremote: Compressing objects:  18% (31/167)   [Kremote: Compressing objects:  19% (32/167)   [Kremote: Compressing objects:  20% (34/167)   [Kremote: Compressing objects:  21% (36/167)   [Kremote: Compressing objects:  22% (37/167)   [Kremote: Compressing objects:  23% (39/167)   [Kremote: Compressing objects:  24% (41/167)   [Kremote: Compressing objects:  25% (42/167)   [Kremote: Compressing objects:  26% (44/167)   [Kremote: Compressing objects:  27% (46/167)   [Kremote: Compressing objects:  28% (47/167)   [Kremote: Compressing objects:  29% (49/167)   [Kremote: Compressing objects:  30% (51/167)   [Kremote: Compressing objects:  31% (52/167)   [Kremote: Compressing objects:  32% (54/167)   [Kremote: Compressing objects:  33% (56/167)   [Kremote: Compressing objects:  34% (57/167)   [Kremote: Compressing objects:  35% (59/167)   [Kremote: Compressing objects:  36% (61/167)   [Kremote: Compressing objects:  37% (62/167)   [Kremote: Compressing objects:  38% (64/167)   [Kremote: Compressing objects:  39% (66/167)   [Kremote: Compressing objects:  40% (67/167)   [Kremote: Compressing objects:  41% (69/167)   [Kremote: Compressing objects:  42% (71/167)   [Kremote: Compressing objects:  43% (72/167)   [Kremote: Compressing objects:  44% (74/167)   [Kremote: Compressing objects:  45% (76/167)   [Kremote: Compressing objects:  46% (77/167)   [Kremote: Compressing objects:  47% (79/167)   [Kremote: Compressing objects:  48% (81/167)   [Kremote: Compressing objects:  49% (82/167)   [Kremote: Compressing objects:  50% (84/167)   [Kremote: Compressing objects:  51% (86/167)   [Kremote: Compressing objects:  52% (87/167)   [Kremote: Compressing objects:  53% (89/167)   [Kremote: Compressing objects:  54% (91/167)   [Kremote: Compressing objects:  55% (92/167)   [Kremote: Compressing objects:  56% (94/167)   [Kremote: Compressing objects:  57% (96/167)   [Kremote: Compressing objects:  58% (97/167)   [Kremote: Compressing objects:  59% (99/167)   [Kremote: Compressing objects:  60% (101/167)   [Kremote: Compressing objects:  61% (102/167)   [Kremote: Compressing objects:  62% (104/167)   [Kremote: Compressing objects:  63% (106/167)   [Kremote: Compressing objects:  64% (107/167)   [Kremote: Compressing objects:  65% (109/167)   [Kremote: Compressing objects:  66% (111/167)   [Kremote: Compressing objects:  67% (112/167)   [Kremote: Compressing objects:  68% (114/167)   [Kremote: Compressing objects:  69% (116/167)   [Kremote: Compressing objects:  70% (117/167)   [Kremote: Compressing objects:  71% (119/167)   [Kremote: Compressing objects:  72% (121/167)   [Kremote: Compressing objects:  73% (122/167)   [Kremote: Compressing objects:  74% (124/167)   [Kremote: Compressing objects:  75% (126/167)   [Kremote: Compressing objects:  76% (127/167)   [Kremote: Compressing objects:  77% (129/167)   [Kremote: Compressing objects:  78% (131/167)   [Kremote: Compressing objects:  79% (132/167)   [Kremote: Compressing objects:  80% (134/167)   [Kremote: Compressing objects:  81% (136/167)   [Kremote: Compressing objects:  82% (137/167)   [Kremote: Compressing objects:  83% (139/167)   [Kremote: Compressing objects:  84% (141/167)   [Kremote: Compressing objects:  85% (142/167)   [Kremote: Compressing objects:  86% (144/167)   [Kremote: Compressing objects:  87% (146/167)   [Kremote: Compressing objects:  88% (147/167)   [Kremote: Compressing objects:  89% (149/167)   [Kremote: Compressing objects:  90% (151/167)   [Kremote: Compressing objects:  91% (152/167)   [Kremote: Compressing objects:  92% (154/167)   [Kremote: Compressing objects:  93% (156/167)   [Kremote: Compressing objects:  94% (157/167)   [Kremote: Compressing objects:  95% (159/167)   [Kremote: Compressing objects:  96% (161/167)   [Kremote: Compressing objects:  97% (162/167)   [Kremote: Compressing objects:  98% (164/167)   [Kremote: Compressing objects:  99% (166/167)   [Kremote: Compressing objects: 100% (167/167)   [Kremote: Compressing objects: 100% (167/167), done.[K
+Receiving objects:   0% (1/172)   Receiving objects:   1% (2/172)   Receiving objects:   2% (4/172)   Receiving objects:   3% (6/172)   Receiving objects:   4% (7/172)   Receiving objects:   5% (9/172)   Receiving objects:   6% (11/172)   Receiving objects:   7% (13/172)   Receiving objects:   8% (14/172)   Receiving objects:   9% (16/172)   Receiving objects:  10% (18/172)   Receiving objects:  11% (19/172)   Receiving objects:  12% (21/172)   Receiving objects:  13% (23/172)   Receiving objects:  14% (25/172)   Receiving objects:  15% (26/172)   Receiving objects:  16% (28/172)   Receiving objects:  17% (30/172)   Receiving objects:  18% (31/172)   Receiving objects:  19% (33/172)   Receiving objects:  20% (35/172)   Receiving objects:  21% (37/172)   Receiving objects:  22% (38/172)   Receiving objects:  23% (40/172)   Receiving objects:  24% (42/172)   Receiving objects:  25% (43/172)   Receiving objects:  26% (45/172)   Receiving objects:  27% (47/172)   Receiving objects:  28% (49/172)   Receiving objects:  29% (50/172)   Receiving objects:  30% (52/172)   Receiving objects:  31% (54/172)   Receiving objects:  32% (56/172)   Receiving objects:  33% (57/172)   Receiving objects:  34% (59/172)   Receiving objects:  35% (61/172)   Receiving objects:  36% (62/172)   Receiving objects:  37% (64/172)   Receiving objects:  38% (66/172)   Receiving objects:  39% (68/172)   Receiving objects:  40% (69/172)   Receiving objects:  41% (71/172)   Receiving objects:  42% (73/172)   Receiving objects:  43% (74/172)   Receiving objects:  44% (76/172)   Receiving objects:  45% (78/172)   Receiving objects:  46% (80/172)   Receiving objects:  47% (81/172)   Receiving objects:  48% (83/172)   Receiving objects:  49% (85/172)   Receiving objects:  50% (86/172)   Receiving objects:  51% (88/172)   Receiving objects:  52% (90/172)   Receiving objects:  53% (92/172)   Receiving objects:  54% (93/172)   Receiving objects:  55% (95/172)   Receiving objects:  56% (97/172)   Receiving objects:  57% (99/172)   Receiving objects:  58% (100/172)   Receiving objects:  59% (102/172)   Receiving objects:  60% (104/172)   Receiving objects:  61% (105/172)   Receiving objects:  62% (107/172)   Receiving objects:  63% (109/172)   Receiving objects:  64% (111/172)   Receiving objects:  65% (112/172)   Receiving objects:  66% (114/172)   Receiving objects:  67% (116/172)   Receiving objects:  68% (117/172)   Receiving objects:  69% (119/172)   Receiving objects:  70% (121/172)   Receiving objects:  71% (123/172)   Receiving objects:  72% (124/172)   Receiving objects:  73% (126/172)   Receiving objects:  74% (128/172)   Receiving objects:  75% (129/172)   Receiving objects:  76% (131/172)   Receiving objects:  77% (133/172)   Receiving objects:  78% (135/172)   Receiving objects:  79% (136/172)   Receiving objects:  80% (138/172)   Receiving objects:  81% (140/172)   Receiving objects:  82% (142/172)   Receiving objects:  83% (143/172)   Receiving objects:  84% (145/172)   Receiving objects:  85% (147/172)   Receiving objects:  86% (148/172)   Receiving objects:  87% (150/172)   Receiving objects:  88% (152/172)   Receiving objects:  89% (154/172)   Receiving objects:  90% (155/172)   Receiving objects:  91% (157/172)   Receiving objects:  92% (159/172)   Receiving objects:  93% (160/172)   Receiving objects:  94% (162/172)   Receiving objects:  95% (164/172)   remote: Total 172 (delta 93), reused 0 (delta 0)[K
+Receiving objects:  96% (166/172)   Receiving objects:  97% (167/172)   Receiving objects:  98% (169/172)   Receiving objects:  99% (171/172)   Receiving objects: 100% (172/172)   Receiving objects: 100% (172/172), 1.15 MiB | 7.42 MiB/s, done.
+Resolving deltas:   0% (0/93)   Resolving deltas:   1% (1/93)   Resolving deltas:   9% (9/93)   Resolving deltas:  12% (12/93)   Resolving deltas:  19% (18/93)   Resolving deltas:  23% (22/93)   Resolving deltas:  24% (23/93)   Resolving deltas:  29% (27/93)   Resolving deltas:  30% (28/93)   Resolving deltas:  34% (32/93)   Resolving deltas:  40% (38/93)   Resolving deltas:  41% (39/93)   Resolving deltas:  43% (40/93)   Resolving deltas:  45% (42/93)   Resolving deltas:  46% (43/93)   Resolving deltas:  47% (44/93)   Resolving deltas:  48% (45/93)   Resolving deltas:  49% (46/93)   Resolving deltas:  51% (48/93)   Resolving deltas:  52% (49/93)   Resolving deltas:  53% (50/93)   Resolving deltas:  61% (57/93)   Resolving deltas:  62% (58/93)   Resolving deltas:  63% (59/93)   Resolving deltas:  64% (60/93)   Resolving deltas:  65% (61/93)   Resolving deltas:  66% (62/93)   Resolving deltas:  67% (63/93)   Resolving deltas:  69% (65/93)   Resolving deltas:  75% (70/93)   Resolving deltas:  76% (71/93)   Resolving deltas:  77% (72/93)   Resolving deltas:  78% (73/93)   Resolving deltas:  79% (74/93)   Resolving deltas:  80% (75/93)   Resolving deltas:  81% (76/93)   Resolving deltas:  82% (77/93)   Resolving deltas:  83% (78/93)   Resolving deltas:  84% (79/93)   Resolving deltas:  86% (80/93)   Resolving deltas:  87% (81/93)   Resolving deltas:  89% (83/93)   Resolving deltas:  90% (84/93)   Resolving deltas:  92% (86/93)   Resolving deltas:  94% (88/93)   Resolving deltas:  95% (89/93)   Resolving deltas:  96% (90/93)   Resolving deltas:  97% (91/93)   Resolving deltas:  98% (92/93)   Resolving deltas: 100% (93/93)   Resolving deltas: 100% (93/93), completed with 31 local objects.
+From ssh://remote.cs.binghamton.edu/~umrigar/git-repos/cs240
+   24bea4c..d85f09e  master     -> origin/master
+Updating 24bea4c..d85f09e
+Fast-forward
+ announce.html                                      |  47 [32m+[m[31m-[m
+ announce.umt                                       |  44 [32m++[m
+ exams-quizzes/cs240a/index.html                    |   8 [32m+[m
+ exams-quizzes/cs240a/index.umt                     |  10 [32m+[m
+ .../cs240a/variant-a/exam1-sol/exam1-sol.html      | 157 [32m+++++++[m
+ .../cs240a/variant-a/exam1-sol/exam1-sol.pdf       | Bin [31m0[m -> [32m97841[m bytes
+ .../cs240a/variant-a/exam1-sol/exam1-sol.umt       | 177 [32m++++++++[m
+ .../variant-a/exam1-sol/exam1-sol/hl-fine_blue.css |  19 [32m+[m
+ .../variant-a/exam1-sol/exam1-sol/hl-fine_blue.sty |  19 [32m+[m
+ exams-quizzes/cs240a/variant-a/exam1/exam1.html    |  79 [32m++++[m
+ exams-quizzes/cs240a/variant-a/exam1/exam1.pdf     | Bin [31m0[m -> [32m77896[m bytes
+ exams-quizzes/cs240a/variant-a/exam1/exam1.umt     |  72 [32m+++[m
+ .../cs240a/variant-a/exam1/exam1/hl-fine_blue.css  |  19 [32m+[m
+ .../cs240a/variant-a/exam1/exam1/hl-fine_blue.sty  |  19 [32m+[m
+ .../cs240a/variant-b/exam1-sol/exam1-sol.html      | 146 [32m++++++[m
+ .../cs240a/variant-b/exam1-sol/exam1-sol.pdf       | Bin [31m0[m -> [32m97752[m bytes
+ .../cs240a/variant-b/exam1-sol/exam1-sol.umt       | 175 [32m++++++++[m
+ .../variant-b/exam1-sol/exam1-sol/hl-fine_blue.css |  19 [32m+[m
+ .../variant-b/exam1-sol/exam1-sol/hl-fine_blue.sty |  19 [32m+[m
+ exams-quizzes/cs240a/variant-b/exam1/exam1.html    |  80 [32m++++[m
+ exams-quizzes/cs240a/variant-b/exam1/exam1.pdf     | Bin [31m0[m -> [32m87534[m bytes
+ exams-quizzes/cs240a/variant-b/exam1/exam1.umt     |  80 [32m++++[m
+ .../cs240a/variant-b/exam1/exam1/hl-fine_blue.css  |  19 [32m+[m
+ .../cs240a/variant-b/exam1/exam1/hl-fine_blue.sty  |  19 [32m+[m
+ .../cs240b/variant-a/exam1-sol/exam1-sol.html      | 154 [32m+++++++[m
+ .../cs240b/variant-a/exam1-sol/exam1-sol.pdf       | Bin [31m0[m -> [32m109921[m bytes
+ .../cs240b/variant-a/exam1-sol/exam1-sol.umt       | 177 [32m++++++++[m
+ .../variant-a/exam1-sol/exam1-sol/hl-fine_blue.css |  19 [32m+[m
+ .../variant-a/exam1-sol/exam1-sol/hl-fine_blue.sty |  19 [32m+[m
+ exams-quizzes/cs240b/variant-a/exam1/exam1.html    |  72 [32m+++[m
+ exams-quizzes/cs240b/variant-a/exam1/exam1.pdf     | Bin [31m0[m -> [32m91812[m bytes
+ exams-quizzes/cs240b/variant-a/exam1/exam1.umt     |  68 [32m+++[m
+ .../cs240b/variant-a/exam1/exam1/hl-fine_blue.css  |  19 [32m+[m
+ .../cs240b/variant-a/exam1/exam1/hl-fine_blue.sty  |  19 [32m+[m
+ .../cs240b/variant-b/exam1-sol/exam1-sol.html      | 145 [32m++++++[m
+ .../cs240b/variant-b/exam1-sol/exam1-sol.pdf       | Bin [31m0[m -> [32m105222[m bytes
+ .../cs240b/variant-b/exam1-sol/exam1-sol.umt       | 171 [32m+++++++[m
+ .../variant-b/exam1-sol/exam1-sol/hl-fine_blue.css |  19 [32m+[m
+ .../variant-b/exam1-sol/exam1-sol/hl-fine_blue.sty |  19 [32m+[m
+ exams-quizzes/cs240b/variant-b/exam1/exam1.html    |  80 [32m++++[m
+ exams-quizzes/cs240b/variant-b/exam1/exam1.pdf     | Bin [31m0[m -> [32m93674[m bytes
+ exams-quizzes/cs240b/variant-b/exam1/exam1.umt     |  81 [32m++++[m
+ .../cs240b/variant-b/exam1/exam1/hl-fine_blue.css  |  19 [32m+[m
+ .../cs240b/variant-b/exam1/exam1/hl-fine_blue.sty  |  19 [32m+[m
+ exams-quizzes/exam1-outline/exam1-outline.html     |  39 [32m++[m
+ exams-quizzes/exam1-outline/exam1-outline.pdf      | Bin [31m0[m -> [32m35562[m bytes
+ exams-quizzes/exam1-outline/exam1-outline.umt      |  24 [32m+[m
+ exams-quizzes/index.html                           |   3 [32m+[m
+ exams-quizzes/index.umt                            |   4 [32m+[m
+ exercises/questions/src/meta.js                    |   2 [32m+[m[31m-[m
+ hws/hw1-sol/hw1-sol.html                           | 398 [32m+++++++++++++++++[m
+ hws/hw1-sol/hw1-sol.pdf                            | Bin [31m0[m -> [32m122868[m bytes
+ hws/hw1-sol/hw1-sol.umt                            | 491 [32m+++++++++++++++++++++[m
+ hws/hw1-sol/hw1-sol/hl-fine_blue.css               |  19 [32m+[m
+ hws/hw1-sol/hw1-sol/hl-fine_blue.sty               |  19 [32m+[m
+ hws/hw2-sol/hw2-sol.html                           | 243 [32m++++++++++[m
+ hws/hw2-sol/hw2-sol.pdf                            | Bin [31m0[m -> [32m119702[m bytes
+ hws/hw2-sol/hw2-sol.umt                            | 263 [32m+++++++++++[m
+ hws/hw2-sol/hw2-sol/hl-fine_blue.css               |  19 [32m+[m
+ hws/hw2-sol/hw2-sol/hl-fine_blue.sty               |  19 [32m+[m
+ hws/hw2-sol/stk-occupied-top.hh                    |  33 [32m++[m
+ hws/index.html                                     |   4 [32m+[m
+ hws/index.umt                                      |   4 [32m+[m[31m-[m
+ index.html                                         |  58 [32m++[m[31m-[m
+ index.umt                                          |  87 [32m++[m[31m--[m
+ labs/index.html                                    |   2 [32m+[m
+ labs/index.umt                                     |   8 [32m+[m[31m-[m
+ labs/lab1/lab1.html                                |  32 [32m+[m[31m-[m
+ labs/lab1/lab1.pdf                                 | Bin [31m145820[m -> [32m145831[m bytes
+ labs/lab1/lab1.umt                                 |  30 [32m+[m[31m-[m
+ labs/lab1/lab1/hl-fine_blue.css                    |   2 [32m+[m[31m-[m
+ labs/lab1/lab1/hl-fine_blue.sty                    |   2 [32m+[m[31m-[m
+ labs/lab6/exercises/4-quoting/'12                  |   0
+ labs/lab6/exercises/4-quoting/**                   |   0
+ labs/lab6/exercises/4-quoting/-l                   |   0
+ "labs/lab6/exercises/4-quoting/1\"2"               |   0
+ labs/lab6/exercises/4-quoting/1$2                  |   0
+ "labs/lab6/exercises/4-quoting/\\\\ab"             |   0
+ "labs/lab6/exercises/4-quoting/a\"b"               |   0
+ labs/lab6/exercises/4-quoting/a$b                  |   0
+ labs/lab6/exercises/4-quoting/a'b                  |   0
+ labs/lab6/lab6.html                                | 265 [32m+++++++++++[m
+ labs/lab6/lab6.pdf                                 | Bin [31m0[m -> [32m105735[m bytes
+ labs/lab6/lab6.umt                                 | 422 [32m++++++++++++++++++[m
+ labs/lab6/lab6/hl-fine_blue.css                    |  19 [32m+[m
+ labs/lab6/lab6/hl-fine_blue.sty                    |  19 [32m+[m
+ projects/prj2/prj2.html                            |   2 [32m+[m[31m-[m
+ projects/prj2/prj2.pdf                             | Bin [31m133655[m -> [32m133656[m bytes
+ projects/prj2/prj2.umt                             |   2 [32m+[m[31m-[m
+ slides/collections1/code/lists/.gitignore          |   5 [32m+[m
+ slides/collections1/collections1.html              |   6 [32m+[m[31m-[m
+ slides/collections1/collections1.pdf               | Bin [31m467874[m -> [32m468574[m bytes
+ slides/collections1/collections1.umt               |   6 [32m+[m[31m-[m
+ slides/collections2/collections2.html              | 163 [32m+++++++[m
+ slides/collections2/collections2.pdf               | Bin [31m0[m -> [32m174424[m bytes
+ slides/collections2/collections2.umt               | 243 [32m++++++++++[m
+ .../61a86f58ca8a1eb6ce816c835a5d9df8.dot           |  22 [32m+[m
+ .../61a86f58ca8a1eb6ce816c835a5d9df8.png           | Bin [31m0[m -> [32m3665[m bytes
+ .../61a86f58ca8a1eb6ce816c835a5d9df8.tree          |   1 [32m+[m
+ .../bb3d288d341f4258bd540f752ac4341c.dot           |  18 [32m+[m
+ .../bb3d288d341f4258bd540f752ac4341c.png           | Bin [31m0[m -> [32m2867[m bytes
+ .../bb3d288d341f4258bd540f752ac4341c.tree          |   1 [32m+[m
+ slides/collections2/figs/2-trees.png               | Bin [31m0[m -> [32m9541[m bytes
+ slides/collections2/figs/chain-tree.png            | Bin [31m0[m -> [32m8370[m bytes
+ slides/collections2/figs/full-complete.png         | Bin [31m0[m -> [32m4762[m bytes
+ slides/collections2/figs/tree-defs.png             | Bin [31m0[m -> [32m12498[m bytes
+ slides/complexity1/complexity1.html                |  80 [32m+++[m[31m-[m
+ slides/complexity1/complexity1.pdf                 | Bin [31m173248[m -> [32m196648[m bytes
+ slides/complexity1/complexity1.umt                 | 141 [32m+++++[m[31m-[m
+ slides/index.html                                  |   3 [32m+[m
+ slides/index.umt                                   |   1 [32m+[m
+ 111 files changed, 5403 insertions(+), 148 deletions(-)
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1-sol/exam1-sol.html
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1-sol/exam1-sol.pdf
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1-sol/exam1-sol.umt
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1-sol/exam1-sol/hl-fine_blue.css
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1-sol/exam1-sol/hl-fine_blue.sty
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1/exam1.html
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1/exam1.pdf
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1/exam1.umt
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1/exam1/hl-fine_blue.css
+ create mode 100644 exams-quizzes/cs240a/variant-a/exam1/exam1/hl-fine_blue.sty
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1-sol/exam1-sol.html
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1-sol/exam1-sol.pdf
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1-sol/exam1-sol.umt
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1-sol/exam1-sol/hl-fine_blue.css
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1-sol/exam1-sol/hl-fine_blue.sty
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1/exam1.html
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1/exam1.pdf
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1/exam1.umt
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1/exam1/hl-fine_blue.css
+ create mode 100644 exams-quizzes/cs240a/variant-b/exam1/exam1/hl-fine_blue.sty
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1-sol/exam1-sol.html
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1-sol/exam1-sol.pdf
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1-sol/exam1-sol.umt
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1-sol/exam1-sol/hl-fine_blue.css
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1-sol/exam1-sol/hl-fine_blue.sty
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1/exam1.html
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1/exam1.pdf
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1/exam1.umt
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1/exam1/hl-fine_blue.css
+ create mode 100644 exams-quizzes/cs240b/variant-a/exam1/exam1/hl-fine_blue.sty
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1-sol/exam1-sol.html
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1-sol/exam1-sol.pdf
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1-sol/exam1-sol.umt
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1-sol/exam1-sol/hl-fine_blue.css
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1-sol/exam1-sol/hl-fine_blue.sty
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1/exam1.html
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1/exam1.pdf
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1/exam1.umt
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1/exam1/hl-fine_blue.css
+ create mode 100644 exams-quizzes/cs240b/variant-b/exam1/exam1/hl-fine_blue.sty
+ create mode 100644 exams-quizzes/exam1-outline/exam1-outline.html
+ create mode 100644 exams-quizzes/exam1-outline/exam1-outline.pdf
+ create mode 100644 exams-quizzes/exam1-outline/exam1-outline.umt
+ create mode 100644 hws/hw1-sol/hw1-sol.html
+ create mode 100644 hws/hw1-sol/hw1-sol.pdf
+ create mode 100644 hws/hw1-sol/hw1-sol.umt
+ create mode 100644 hws/hw1-sol/hw1-sol/hl-fine_blue.css
+ create mode 100644 hws/hw1-sol/hw1-sol/hl-fine_blue.sty
+ create mode 100644 hws/hw2-sol/hw2-sol.html
+ create mode 100644 hws/hw2-sol/hw2-sol.pdf
+ create mode 100644 hws/hw2-sol/hw2-sol.umt
+ create mode 100644 hws/hw2-sol/hw2-sol/hl-fine_blue.css
+ create mode 100644 hws/hw2-sol/hw2-sol/hl-fine_blue.sty
+ create mode 100644 hws/hw2-sol/stk-occupied-top.hh
+ create mode 100644 labs/lab6/exercises/4-quoting/'12
+ create mode 100644 labs/lab6/exercises/4-quoting/**
+ create mode 100644 labs/lab6/exercises/4-quoting/-l
+ create mode 100644 "labs/lab6/exercises/4-quoting/1\"2"
+ create mode 100644 labs/lab6/exercises/4-quoting/1$2
+ create mode 100644 "labs/lab6/exercises/4-quoting/\\\\ab"
+ create mode 100644 "labs/lab6/exercises/4-quoting/a\"b"
+ create mode 100644 labs/lab6/exercises/4-quoting/a$b
+ create mode 100644 labs/lab6/exercises/4-quoting/a'b
+ create mode 100644 labs/lab6/lab6.html
+ create mode 100644 labs/lab6/lab6.pdf
+ create mode 100644 labs/lab6/lab6.umt
+ create mode 100644 labs/lab6/lab6/hl-fine_blue.css
+ create mode 100644 labs/lab6/lab6/hl-fine_blue.sty
+ create mode 100644 slides/collections1/code/lists/.gitignore
+ create mode 100644 slides/collections2/collections2.html
+ create mode 100644 slides/collections2/collections2.pdf
+ create mode 100644 slides/collections2/collections2.umt
+ create mode 100644 slides/collections2/collections2/61a86f58ca8a1eb6ce816c835a5d9df8.dot
+ create mode 100644 slides/collections2/collections2/61a86f58ca8a1eb6ce816c835a5d9df8.png
+ create mode 100644 slides/collections2/collections2/61a86f58ca8a1eb6ce816c835a5d9df8.tree
+ create mode 100644 slides/collections2/collections2/bb3d288d341f4258bd540f752ac4341c.dot
+ create mode 100644 slides/collections2/collections2/bb3d288d341f4258bd540f752ac4341c.png
+ create mode 100644 slides/collections2/collections2/bb3d288d341f4258bd540f752ac4341c.tree
+ create mode 100644 slides/collections2/figs/2-trees.png
+ create mode 100644 slides/collections2/figs/chain-tree.png
+ create mode 100644 slides/collections2/figs/full-complete.png
+ create mode 100644 slides/collections2/figs/tree-defs.png
+]0;alongo5@g7-10: ~/cs240[01;32malongo5@g7-10[00m:[01;34m~/cs240[01;31m (master)[00m$ cd i[K../i240a
+]0;alongo5@g7-10: ~/i240a[01;32malongo5@g7-10[00m:[01;34m~/i240a[01;31m (lab6)[00m$ cd submit/lab6/
+]0;alongo5@g7-10: ~/i240a/submit/lab6[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6[01;31m (lab6)[00m$ cp -r ~/cs240/labs/lab6/exercises/ .
+]0;alongo5@g7-10: ~/i240a/submit/lab6[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6[01;31m (lab6)[00m$ ls
+[0m[01;34mexercises[0m  lab6.LOG
+]0;alongo5@g7-10: ~/i240a/submit/lab6[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6[01;31m (lab6)[00m$ cd exercises/
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls
+[0m[01;34m4-quoting[0m
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ mkfi[K[Kdir dir
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ touch t1.c v.c v1.s x.c dir/ t2.c dir/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CTv.c v1.s x.c dir/[1@t[A]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ [C[C[C[C[C[C[C[C[C[C[C[C1v.c v1.s x.c dir[1@/[A]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C v.c v1.s x.c di[1@r[A]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Cv.c v1.s x.c dir[1P[A]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C.v.c v1.s x.c di[1@r[A]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Csv.c v1.s x.c d[1@i[A]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C v.c v1.s x.c [1@d[A]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[CT2.s1 dir/t3
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls
+[0m[01;34m4-quoting[0m  [01;34mdir[0m  t1.c  T1.s  v1.s  v.c  x.c
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ;s -l
+bash: syntax error near unexpected token `;'
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls -l
+total 0
+drwxr-x--- 2 alongo5 alongo5 135 Mar 12 13:16 [0m[01;34m4-quoting[0m
+drwxr-x--- 2 alongo5 alongo5  54 Mar 12 13:18 [01;34mdir[0m
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 t1.c
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 T1.s
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 v1.s
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 v.c
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 x.c
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls -tl
+total 0
+drwxr-x--- 2 alongo5 alongo5  54 Mar 12 13:18 [0m[01;34mdir[0m
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 x.c
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 T1.s
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 v1.s
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 v.c
+-rw-r----- 1 alongo5 alongo5   0 Mar 12 13:18 t1.c
+drwxr-x--- 2 alongo5 alongo5 135 Mar 12 13:16 [01;34m4-quoting[0m
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls dir
+t2.c  T2.s1  t3
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls -l dir
+total 0
+-rw-r----- 1 alongo5 alongo5 0 Mar 12 13:18 t2.c
+-rw-r----- 1 alongo5 alongo5 0 Mar 12 13:18 T2.s1
+-rw-r----- 1 alongo5 alongo5 0 Mar 12 13:18 t3
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls [K[K[Kls -t dir
+T2.s1  t3  t2.c
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ man touch
+[?1049h[22;0;0t[?1h=TOUCH(1)                         User Commands                        TOUCH(1)[m
+[m
+[1mNAME[0m[m
+       touch - change file timestamps[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtouch[0m [[4mOPTION[24m]... [4mFILE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Update  the  access  and modification times of each FILE to the current[m
+       time.[m
+[m
+       A FILE argument that does not exist is created empty, unless [1m-c[0m  or  [1m-h[0m[m
+       is supplied.[m
+[m
+       A  FILE  argument  string of - is handled specially and causes touch to[m
+       change the times of the file associated with standard output.[m
+[m
+       Mandatory arguments to long options are  mandatory  for  short  options[m
+       too.[m
+[m
+       [1m-a[0m     change only the access time[m
+[m
+       [1m-c[0m, [1m--no-create[0m[m
+              do not create any files[m
+[m
+       [1m-d[0m, [1m--date[0m=[4mSTRING[24m[m
+              parse STRING and use it instead of current time[m
+[m
+       [1m-f[0m     (ignored)[m
+[m
+       [1m-h[0m, [1m--no-dereference[0m[m
+              affect each symbolic link instead of any referenced file (useful[m
+              only on systems that can change the timestamps of a symlink)[m
+[m
+       [1m-m[0m     change only the modification time[m
+[m
+       [1m-r[0m, [1m--reference[0m=[4mFILE[24m[m
+              use this file's times instead of current time[m
+[m
+       [1m-t[0m STAMP[m
+              use [[CC]YY]MMDDhhmm[.ss] instead of current time[m
+[m
+       [1m--time[0m=[4mWORD[24m[m
+              change the specified time: WORD is access, atime, or use: equiv‐[m
+              alent to [1m-a[0m WORD is modify or mtime: equivalent to [1m-m[0m[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+[7m Manual page touch(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ man ls
+[?1049h[22;0;0t[?1h=LS(1)                            User Commands                           LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about  the FILEs (the current directory by default).[m
+       Sort entries alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m  is  speci‐[m
+       fied.[m
+[m
+       Mandatory  arguments  to  long  options are mandatory for short options[m
+       too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              with  [1m-l[0m,  scale  sizes  by  SIZE  when  printing  them;   e.g.,[m
+              '--block-size=M'; see SIZE format below[m
+[m
+       [1m-B[0m, [1m--ignore-backups[0m[m
+              do not list implied entries ending with ~[m
+[m
+       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of[m
+              file status information); with [1m-l[0m: show ctime and sort by  name;[m
+              otherwise: sort by ctime, newest first[m
+[m
+       [1m-C[0m     list entries by columns[m
+[m
+       [1m--color[0m[=[4mWHEN[24m][m
+              colorize  the output; WHEN can be 'always' (default if omitted),[m
+              'auto', or 'never'; more info below[m
+[m
+       [1m-d[0m, [1m--directory[0m[m
+              list directories themselves, not their contents[m
+[m
+       [1m-D[0m, [1m--dired[0m[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls T*
+T1.s
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls f[Kdir/*.?
+dir/t2.c
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls []t]-]v][C*.c
+t1.c  v.c
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls [t-v]*.c[1P]*.c[1P]*.c[1P]*.ca]*.c-]*.cz]*.c
+t1.c  v.c  x.c
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls /bin[K[K[K[K[K[K[Kls /b
+backup/ bin/    boot/   
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls /bin/?[]p]-]z][C[1P]s][C*
+[0m[01;32m/bin/cp[0m    [01;32m/bin/grep[0m  [01;32m/bin/lsblk[0m   [01;32m/bin/ps[0m    [01;36m/bin/ypdomainname[0m
+[01;32m/bin/cpio[0m  [01;32m/bin/ip[0m    [01;36m/bin/lsmod[0m   [01;32m/bin/ss[0m    [01;32m/bin/zsh[0m
+[01;36m/bin/csh[0m   [01;32m/bin/ls[0m    [01;32m/bin/openvt[0m  [01;32m/bin/true[0m  [01;32m/bin/zsh5[0m
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls /etc/*rc
+/etc/bash.bashrc    /etc/gnashthumbnailrc  /etc/Muttrc         /etc/screenrc
+/etc/chktexrc       /etc/inputrc           /etc/nanorc         /etc/slsh.rc
+/etc/csh.cshrc      /etc/lintianrc         /etc/pbuilderrc     /etc/wgetrc
+/etc/gnashpluginrc  /etc/mail.rc           /etc/quilt.quiltrc
+/etc/gnashrc        /etc/matplotlibrc      /etc/sbclrc
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls /bin/???
+[0m[01;32m/bin/cat[0m  [01;36m/bin/csh[0m  [01;32m/bin/dir[0m  [01;32m/bin/pwd[0m  [01;32m/bin/red[0m  [01;32m/bin/sed[0m  [01;32m/bin/tar[0m  [01;32m/bin/zsh[0m
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls > ls.log
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ l[Kcat ls.log 
+4-quoting
+dir
+ls.log
+t1.c
+T1.s
+v1.s
+v.c
+x.c
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ a[Kcat ca[K[K[K > catl[K[Kt.log
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls
+[0m[01;34m4-quoting[0m  cat.log  [01;34mdir[0m  ls.log  t1.c  T1.s  v1.s  v.c  x.c
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cat cat[K[K[K[K[K[K[Kcat cat.log 
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cat > cat.log 
+sa;dlkfj
+asdlfjkh
+fheuifhe
+fheuhfurkls
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cat vc[Kc[K[Kcat.log [K
+sa;dlkfj
+asdlfjkh
+fheuifhe
+fheuhfurkls
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ dir [K[K[K[Kls dior[K[Kr >> ls.log
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cat ls.log 
+4-quoting
+dir
+ls.log
+t1.c
+T1.s
+v1.s
+v.c
+x.c
+t2.c
+T2.s1
+t3
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cat <ks,[K[K[K ls.log 
+4-quoting
+dir
+ls.log
+t1.c
+T1.s
+v1.s
+v.c
+x.c
+t2.c
+T2.s1
+t3
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cls
+[H[2J[3J]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls | wc -l
+9
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls ||[K wc -l < /bin/????
+bash: /bin/????: ambiguous redirect
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls | wc -l < /bin/????[K[K[K[K[K[K[K[K[K[K[K[K[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[Kman wc
+[?1049h[22;0;0t[?1h=WC(1)                            User Commands                           WC(1)[m
+[m
+[1mNAME[0m[m
+       wc - print newline, word, and byte counts for each file[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mwc[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+       [1mwc[0m [[4mOPTION[24m]... [4m--files0-from=F[24m[m
+[m
+[1mDESCRIPTION[0m[m
+       Print newline, word, and byte counts for each FILE, and a total line if[m
+       more than one FILE is specified.  A word is a non-zero-length  sequence[m
+       of characters delimited by white space.[m
+[m
+       With no FILE, or when FILE is -, read standard input.[m
+[m
+       The  options  below may be used to select which counts are printed, al‐[m
+       ways in the following order: newline, word,  character,  byte,  maximum[m
+       line length.[m
+[m
+       [1m-c[0m, [1m--bytes[0m[m
+              print the byte counts[m
+[m
+       [1m-m[0m, [1m--chars[0m[m
+              print the character counts[m
+[m
+       [1m-l[0m, [1m--lines[0m[m
+              print the newline counts[m
+[m
+       [1m--files0-from[0m=[4mF[24m[m
+              read  input  from the files specified by NUL-terminated names in[m
+              file F; If F is - then read names from standard input[m
+[m
+       [1m-L[0m, [1m--max-line-length[0m[m
+              print the maximum display width[m
+[m
+       [1m-w[0m, [1m--words[0m[m
+              print the word counts[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+[1mAUTHOR[0m[m
+       Written by Paul Rubin and David MacKenzie.[m
+[m
+[1mREPORTING[0m [1mBUGS[0m[m
+       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>[m
+[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Report wc translation bugs to <https://translationproject.org/team/>[m
+[7m Manual page wc(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMWC(1)                            User Commands                           WC(1)[m
+[50;1H[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Report wc translation bugs to <https://translationproject.org/team/>[m
+[7m Manual page wc(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOPYRIGHT[0m[m
+[7m Manual page wc(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Copyright © 2018 Free Software Foundation, Inc.   License  GPLv3+:  GNU[m
+[7m Manual page wc(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.[m
+[7m Manual page wc(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This  is  free  software:  you  are free to change and redistribute it.[m
+[7m Manual page wc(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       There is NO WARRANTY, to the extent permitted by law.[m
+[7m Manual page wc(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page wc(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Full documentation at: <https://www.gnu.org/software/coreutils/wc>[m
+[7m Manual page wc(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or available locally via: info '(coreutils) wc invocation'[m
+[7m Manual page wc(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page wc(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KGNU coreutils 8.30               February 2019                           WC(1)[m
+[7m Manual page wc(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page wc(1) line 14/62 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       of characters delimited by white space.[m
+[50;1H[K[7m Manual page wc(1) line 13/62 97% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       more than one FILE is specified.  A word is a non-zero-length  sequence[m
+[50;1H[K[7m Manual page wc(1) line 12/62 97% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Print newline, word, and byte counts for each FILE, and a total line if[m
+[50;1H[K[7m Manual page wc(1) line 11/62 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[50;1H[K[7m Manual page wc(1) line 10/62 91% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[50;1H[K[7m Manual page wc(1) line 9/62 90% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mwc[0m [[4mOPTION[24m]... [4m--files0-from=F[24m[m
+[50;1H[K[7m Manual page wc(1) line 8/62 90% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mwc[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[50;1H[K[7m Manual page wc(1) line 7/62 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[50;1H[K[7m Manual page wc(1) line 6/62 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[50;1H[K[7m Manual page wc(1) line 5/62 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       wc - print newline, word, and byte counts for each file[m
+[50;1H[K[7m Manual page wc(1) line 4/62 78% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[50;1H[K[7m Manual page wc(1) line 3/62 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[50;1H[K[7m Manual page wc(1) line 2/62 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMWC(1)                            User Commands                           WC(1)[m
+[50;1H[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page wc(1) line 1/62 73% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls /usr[K[K[Kbin/???? | wc -l
+23
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls /bin/c* > bion[K[Knl[K.oog[K[K[Klog
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls bin.log 
+bin.log
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cat bin.log 
+/bin/cat
+/bin/chacl
+/bin/chgrp
+/bin/chmod
+/bin/chown
+/bin/chvt
+/bin/cp
+/bin/cpio
+/bin/csh
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls bin.log | wc -l
+1
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cat bin.log | wc.l
+bash: wc.l: command not found
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cat bin.log | wc.lls bin.log | wc -lcat bin.log | wc.l[C[K [K[K -l
+9
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ man tr
+[?1049h[22;0;0t[?1h=TR(1)                            User Commands                           TR(1)[m
+[m
+[1mNAME[0m[m
+       tr - translate or delete characters[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       Translate, squeeze, and/or delete characters from standard input, writ‐[m
+       ing to standard output.[m
+[m
+       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+              use the complement of SET1[m
+[m
+       [1m-d[0m, [1m--delete[0m[m
+              delete characters in SET1, do not translate[m
+[m
+       [1m-s[0m, [1m--squeeze-repeats[0m[m
+              replace each sequence of a repeated character that is listed  in[m
+              the last specified SET, with a single occurrence of that charac‐[m
+              ter[m
+[m
+       [1m-t[0m, [1m--truncate-set1[0m[m
+              first truncate SET1 to length of SET2[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       SETs are specified as strings  of  characters.   Most  represent  them‐[m
+       selves.  Interpreted sequences are:[m
+[m
+       \NNN   character with octal value NNN (1 to 3 octal digits)[m
+[m
+       \\     backslash[m
+[m
+       \a     audible BEL[m
+[m
+       \b     backspace[m
+[m
+       \f     form feed[m
+[m
+       \n     new line[m
+[m
+       \r     return[m
+[m
+       \t     horizontal tab[m
+[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ tr []a]-]x][1P]z][C* []A]-]x][1P]Z][C.[K* < .[1@l[1@s[1@ [1@|[1@ 
+tr: extra operand ‘dir’
+Try 'tr --help' for more information.
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls | tr [a-z]* [A-Z]* < .man tr[K
+[?1049h[22;0;0t[?1h=TR(1)                            User Commands                           TR(1)[m
+[m
+[1mNAME[0m[m
+       tr - translate or delete characters[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       Translate, squeeze, and/or delete characters from standard input, writ‐[m
+       ing to standard output.[m
+[m
+       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+              use the complement of SET1[m
+[m
+       [1m-d[0m, [1m--delete[0m[m
+              delete characters in SET1, do not translate[m
+[m
+       [1m-s[0m, [1m--squeeze-repeats[0m[m
+              replace each sequence of a repeated character that is listed  in[m
+              the last specified SET, with a single occurrence of that charac‐[m
+              ter[m
+[m
+       [1m-t[0m, [1m--truncate-set1[0m[m
+              first truncate SET1 to length of SET2[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       SETs are specified as strings  of  characters.   Most  represent  them‐[m
+       selves.  Interpreted sequences are:[m
+[m
+       \NNN   character with octal value NNN (1 to 3 octal digits)[m
+[m
+       \\     backslash[m
+[m
+       \a     audible BEL[m
+[m
+       \b     backspace[m
+[m
+       \f     form feed[m
+[m
+       \n     new line[m
+[m
+       \r     return[m
+[m
+       \t     horizontal tab[m
+[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMTR(1)                            User Commands                           TR(1)[m
+[50;1H[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \v     vertical tab[m
+[7m Manual page tr(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       CHAR1-CHAR2[m
+[7m Manual page tr(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all characters from CHAR1 to CHAR2 in ascending order[m
+[7m Manual page tr(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*][m
+[7m Manual page tr(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              in SET2, copies of CHAR until length of SET1[m
+[7m Manual page tr(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*REPEAT][m
+[7m Manual page tr(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              REPEAT copies of CHAR, REPEAT octal if starting with 0[m
+[7m Manual page tr(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alnum:][m
+[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters and digits[m
+[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alpha:][m
+[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters[m
+[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:blank:][m
+[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal whitespace[m
+[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:cntrl:][m
+[7m Manual page tr(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all control characters[m
+[7m Manual page tr(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:digit:][m
+[7m Manual page tr(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all digits[m
+[7m Manual page tr(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:graph:][m
+[7m Manual page tr(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all printable characters, not including space[m
+[7m Manual page tr(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:lower:][m
+[7m Manual page tr(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all lower case letters[m
+[7m Manual page tr(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:print:][m
+[7m Manual page tr(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all printable characters, including space[m
+[7m Manual page tr(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:punct:][m
+[7m Manual page tr(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all punctuation characters[m
+[7m Manual page tr(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:space:][m
+[7m Manual page tr(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal or vertical whitespace[m
+[7m Manual page tr(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:upper:][m
+[7m Manual page tr(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all upper case letters[m
+[7m Manual page tr(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:xdigit:][m
+[7m Manual page tr(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all hexadecimal digits[m
+[7m Manual page tr(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [=CHAR=][m
+[7m Manual page tr(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all characters which are equivalent to CHAR[m
+[7m Manual page tr(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Translation  occurs  if  [1m-d[0m is not given and both SET1 and SET2 appear.[m
+[7m Manual page tr(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-t[0m may be used only when translating.  SET2 is extended  to  length  of[m
+[7m Manual page tr(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       SET1  by  repeating its last character as necessary.  Excess characters[m
+[7m Manual page tr(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       of SET2 are ignored.  Only [:lower:] and [:upper:]  are  guaranteed  to[m
+[7m Manual page tr(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       expand  in  ascending  order;  used in SET2 while translating, they may[m
+[7m Manual page tr(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       only be used in pairs to specify case conversion.   [1m-s[0m  uses  the  last[m
+[7m Manual page tr(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       specified SET, and occurs after translation or deletion.[m
+[7m Manual page tr(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page tr(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written by Jim Meyering.[m
+[7m Manual page tr(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREPORTING[0m [1mBUGS[0m[m
+[7m Manual page tr(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>[m
+[7m Manual page tr(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Report tr translation bugs to <https://translationproject.org/team/>[m
+[7m Manual page tr(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOPYRIGHT[0m[m
+[7m Manual page tr(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Copyright  ©  2018  Free Software Foundation, Inc.  License GPLv3+: GNU[m
+[7m Manual page tr(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GPL version 3 or later <https://gnu.org/licenses/gpl.html>.[m
+[7m Manual page tr(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is free software: you are free  to  change  and  redistribute  it.[m
+[7m Manual page tr(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       There is NO WARRANTY, to the extent permitted by law.[m
+[7m Manual page tr(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page tr(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Full documentation at: <https://www.gnu.org/software/coreutils/tr>[m
+[7m Manual page tr(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or available locally via: info '(coreutils) tr invocation'[m
+[7m Manual page tr(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KGNU coreutils 8.30               February 2019                           TR(1)[m
+[7m Manual page tr(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 78/126 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 78/126 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 78/126 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 78/126 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 78/126 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 78/126 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 78/126 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 78/126 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ man trls | tr [a-z]* [A-Z]* < .[C[C[C[C[1P[1P[1@e[1@c[1@h[1@o
+tr: extra operand ‘dir’
+Try 'tr --help' for more information.
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ echo | tr [a-z]* [A-Z]* < .[C[C[C[C[C[C[C[1P .[C[C[1P.
+tr: extra operand ‘dir’
+Try 'tr --help' for more information.
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ tr --help
+Usage: tr [OPTION]... SET1 [SET2]
+Translate, squeeze, and/or delete characters from standard input,
+writing to standard output.
+
+  -c, -C, --complement    use the complement of SET1
+  -d, --delete            delete characters in SET1, do not translate
+  -s, --squeeze-repeats   replace each sequence of a repeated character
+                            that is listed in the last specified SET,
+                            with a single occurrence of that character
+  -t, --truncate-set1     first truncate SET1 to length of SET2
+      --help     display this help and exit
+      --version  output version information and exit
+
+SETs are specified as strings of characters.  Most represent themselves.
+Interpreted sequences are:
+
+  \NNN            character with octal value NNN (1 to 3 octal digits)
+  \\              backslash
+  \a              audible BEL
+  \b              backspace
+  \f              form feed
+  \n              new line
+  \r              return
+  \t              horizontal tab
+  \v              vertical tab
+  CHAR1-CHAR2     all characters from CHAR1 to CHAR2 in ascending order
+  [CHAR*]         in SET2, copies of CHAR until length of SET1
+  [CHAR*REPEAT]   REPEAT copies of CHAR, REPEAT octal if starting with 0
+  [:alnum:]       all letters and digits
+  [:alpha:]       all letters
+  [:blank:]       all horizontal whitespace
+  [:cntrl:]       all control characters
+  [:digit:]       all digits
+  [:graph:]       all printable characters, not including space
+  [:lower:]       all lower case letters
+  [:print:]       all printable characters, including space
+  [:punct:]       all punctuation characters
+  [:space:]       all horizontal or vertical whitespace
+  [:upper:]       all upper case letters
+  [:xdigit:]      all hexadecimal digits
+  [=CHAR=]        all characters which are equivalent to CHAR
+
+Translation occurs if -d is not given and both SET1 and SET2 appear.
+-t may be used only when translating.  SET2 is extended to length of
+SET1 by repeating its last character as necessary.  Excess characters
+of SET2 are ignored.  Only [:lower:] and [:upper:] are guaranteed to
+expand in ascending order; used in SET2 while translating, they may
+only be used in pairs to specify case conversion.  -s uses the last
+specified SET, and occurs after translation or deletion.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/tr>
+or available locally via: info '(coreutils) tr invocation'
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls
+[0m[01;34m4-quoting[0m  bin.log  cat.log  [01;34mdir[0m  ls.log  t1.c  T1.s  v1.s  v.c  x.c
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cd 4-quoting/
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"   -l
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ech [Ko \\
+\
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echo \'
+'
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echo \*
+*
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echo \$HOME\"\\
+$HOME"\
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echo '\'
+\
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echo '\\'
+\\
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echo \*$~[1P*$~'*$~[C[C[C'
+*$~
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echp[Kp[Ko"\"\\"
+bash: echo"\: command not found
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echo"\"\\" "\"\\"[C[C[C[C[C[C
+"\
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echo ""$"H"O"M"E"
+/home/alongo5
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ echo \
+> abc \
+> 123
+abc 123
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ cd ..
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ ls | tr ""["]"a]"-]"z]"[C[C ""["]"A]"-]"Z]"[C[C
+4-QUOTING
+BIN.LOG
+CAT.LOG
+DIR
+LS.LOG
+T1.C
+T1.S
+V1.S
+V.C
+X.C
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises[01;31m (lab6)[00m$ cd 4-quoting/
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls *'$'$[K*
+'1$2'  'a$b'
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"   -l
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls *\'*
+"'12"  "a'b"
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls \\*
+'\\ab'
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls '??'
+ls: cannot access '??': No such file or directory
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls '??'[K[K[K[K??
+-rw-r----- 1 alongo5 alongo5 0 Mar 12 13:16 '**'
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls --**
+ls: unrecognized option '--**'
+Try 'ls --help' for more information.
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls-- [K[K[K --??
+ls: unrecognized option '--??'
+Try 'ls --help' for more information.
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ ls --?? ??
+'**'   -l
+]0;alongo5@g7-10: ~/i240a/submit/lab6/exercises/4-quoting[01;32malongo5@g7-10[00m:[01;34m~/i240a/submit/lab6/exercises/4-quoting[01;31m (lab6)[00m$ exit
+
+Script done on 2020-03-12 13:56:05-04:00 [COMMAND_EXIT_CODE="0"]
