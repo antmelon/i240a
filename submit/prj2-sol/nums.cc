@@ -1,7 +1,7 @@
 #include "arrayseq.hh"
 #include "command.hh"
 #include "seq.hh"
-
+#include "dlinkseq.hh"
 #include <cctype>
 #include <cstdlib>
 #include <iostream>
@@ -22,32 +22,63 @@ bool fileExists(const char *fileName){
   return true;
 }
 
-void outputFile(const char *fileName){
+static void outputFile(const char *fileName, Seq<TestType>* seq_ptr){
   if(fileExists(fileName)){
     std::ifstream in(fileName);
-    while(in.good()){
-      std::string w;
+    Seq<TestType>& seq = *seq_ptr;
+    while(in.good() && !(in.eof())){
+      TestType w;
       in >> w;
-      std::cout << w << std::endl;
+      seq.push(w);
     }
   }
 }
 
 int main(int argc, char* argv[]){
+  SeqPtr<TestType> seq;
   if(argc == 1){
     std::cout << "usage ./nums [-a] INTS_FILE_PATH" << std::endl;
     std::exit(1);
   }
   else if(argc == 2){
-    outputFile(argv[1]);
+    seq = DLinkSeq<TestType>::make();
+    outputFile(argv[1], seq.get());
+    auto begin = seq -> cbegin();
+    auto end = seq -> cend();
+    auto &p = *begin;
+    auto &q = *end;
+    --q;
+    while(p && q){
+      std::cout << *p << std::endl;
+      std::cout << *q << std::endl;
+      ++p;
+      --q;
+    }
   }
   else if(argc == 3){
     if(argv[1][0] == '-' && argv[1][1] == 'a'){
       //use array seq
-      outputFile(argv[2]);
+      seq = ArraySeq<TestType>::make();
+      outputFile(argv[2], seq.get());
     }
     else{
       std::cout << "invalid input for [-a]" << std::endl; 
     }
+  
+
+    auto begin = seq -> cbegin();
+    auto end = seq -> cend();
+    auto &p = *begin;
+    auto &q = *end;
+    --q;
+    while(p && q){
+      std::cout << *p << std::endl;
+      std::cout << *q << std::endl;
+      ++p;
+      --q;
+    }
+
+    return 0;
   }
+
 }
