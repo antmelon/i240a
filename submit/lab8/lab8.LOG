@@ -1,0 +1,440 @@
+Script started on 2020-03-26 12:08:45-04:00 [TERM="screen-256color" TTY="/dev/pts/1" COLUMNS="158" LINES="45"]
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ cp -r ~/cs240/labs/lab8/exercises/ .
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ ls
+[0m[01;34mexercises[0m  lab8.LOG
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ env
+SHELL=/bin/bash
+DERBY_HOME=/usr/lib/jvm/java-8-oracle/db
+JAVA_HOME=/usr/lib/jvm/java-8-oracle
+SSH_AUTH_SOCK=/tmp/ssh-QlOqCkzNv3kl/agent.2291656
+SSH_AGENT_PID=2291657
+KRB5CCNAME=FILE:/tmp/krb5cc_14626_BNEFPTxv7U
+PWD=/home/alongo5/i240a/submit/lab8
+LOGNAME=alongo5
+XDG_SESSION_TYPE=tty
+J2REDIR=/usr/lib/jvm/java-8-oracle/jre
+VIRTUALENVWRAPPER_SCRIPT=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+HOME=/home/alongo5
+LANG=en_US.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+_VIRTUALENVWRAPPER_API= mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv
+LC_TERMINAL=iTerm2
+SSH_CONNECTION=108.27.229.68 55247 128.226.114.205 22
+NVM_DIR=/home/alongo5/.nvm
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=screen-256color
+J2SDKDIR=/usr/lib/jvm/java-8-oracle
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=alongo5
+LC_TERMINAL_VERSION=3.3.9
+SHLVL=2
+XDG_SESSION_ID=187230
+CLASSPATH=.:/home/alongo5/cs240/lib
+LD_LIBRARY_PATH=.:/home/alongo5/cs240/lib
+XDG_RUNTIME_DIR=/run/user/14626
+SSH_CLIENT=108.27.229.68 55247 22
+PATH=~/.local/bin:/sbin:~/.local/bin:/sbin:/home/alongo5/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/14626/bus
+MAIL=/var/mail/alongo5
+SSH_TTY=/dev/pts/1
+OLDPWD=/home/alongo5/i240a/submit/lab8
+_=/usr/bin/env
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ echo $HOME
+/home/alongo5
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ echo $AT[K[KPATH
+~/.local/bin:/sbin:~/.local/bin:/sbin:/home/alongo5/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ exho[K[K[Kcho $xxx
+
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ env[K[K[Kxxx = 123
+bash: xxx: command not found
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ xxx=123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ echo $xxx
+123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ env | grep xxx
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ export xxx
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ env |grep[K[K[K[K grep xxx[K
+[01;31m[Kxx[m[Kx=123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ export xx=456
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ env | grep xx
+[01;31m[Kxx[m[Kx=123
+[01;31m[Kxx[m[K=456
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ env[K[K[Kp=$PATH
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ echo $p
+~/.local/bin:/sbin:~/.local/bin:/sbin:/home/alongo5/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ $PATH =[K[K=
+bash: ~/.local/bin:/sbin:~/.local/bin:/sbin:/home/alongo5/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin=: No such file or directory
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ ls
+[0m[01;34mexercises[0m  lab8.LOG
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ $PATH=''
+bash: ~/.local/bin:/sbin:~/.local/bin:/sbin:/home/alongo5/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin=: No such file or directory
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ ls
+[0m[01;34mexercises[0m  lab8.LOG
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ export pa[K[KP[K[K[K[K[K[K[K[KPATH=''
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m[00m$ echo$PA[K[K[K $PATH
+
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m[00m$ ls
+bash: ls: No such file or directory
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m[00m$ PATH=$p
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ ls
+[0m[01;34mexercises[0m  lab8.LOG
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ echo #[K$PATH
+~/.local/bin:/sbin:~/.local/bin:/sbin:/home/alongo5/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ ls ; wc *
+[0m[01;34mexercises[0m  lab8.LOG
+wc: exercises: Is a directory
+      0       0       0 exercises
+      0       0       0 lab8.LOG
+      0       0       0 total
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ find -L ~/cs240 -name *.c''*.c'
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ find -L ~/cs240 -name '*.c' | wc -l
+0
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ find -L ~/cs240 -name '*.c' | wc -l[C[1P[1P[1P
+0
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ find ~/cs240 -name '*.c' | wc -l[K[K[K[K[K[K[K[K
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ find / -name '*.c' 2>/dev/null >c-files.lst &
+[1] 2293073
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ o[Kjobs
+[1]+  Running                 find / -name '*.c' 2> /dev/null > c-files.lst &
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ kill %1
+[1]+  Terminated              find / -name '*.c' 2> /dev/null > c-files.lst
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ ls
+c-files.lst  [0m[01;34mexercises[0m  lab8.LOG
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ cat c-files.lst 
+/import/linux/opt/arduino-1.0.1/hardware/arduino/bootloaders/atmega/ATmegaBOOT_168.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/bootloaders/atmega8/ATmegaBOOT.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/bootloaders/bt/ATmegaBOOT_168.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/bootloaders/caterina/Caterina.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/bootloaders/caterina/Descriptors.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/bootloaders/lilypad/src/ATmegaBOOT.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/bootloaders/optiboot/optiboot.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/bootloaders/stk500v2/stk500boot.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/cores/arduino/WInterrupts.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/cores/arduino/wiring.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/cores/arduino/wiring_analog.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/cores/arduino/wiring_digital.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/cores/arduino/wiring_pulse.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/cores/arduino/wiring_shift.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/firmwares/arduino-usbdfu/Arduino-usbdfu.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/firmwares/arduino-usbdfu/Descriptors.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/firmwares/arduino-usbserial/Arduino-usbserial.c
+/import/linux/opt/arduino-1.0.1/hardware/arduino/firmwares/arduino-usbserial/Descriptors.c
+/import/linux/opt/arduino-1.0.1/libraries/Wire/utility/twi.c
+/import/linux/opt/cadence/ASSURA314/install/bin.lnx86/cdsudp.c
+/import/linux/opt/cadence/ASSURA314/install/bin.lnx86/genControl.c
+/import/linux/opt/cadence/ASSURA314/install/bin.lnx86/io_fltr.c
+/import/linux/opt/cadence/ASSURA314/install/bin.lnx86/process_file.c
+/import/linux/opt/cadence/IC5141/install/bin.lnx86/cdsudp.c
+/import/linux/opt/cadence/IC5141/install/bin.lnx86/genControl.c
+/import/linux/opt/cadence/IC5141/install/bin.lnx86/io_fltr.c
+/import/linux/opt/cadence/IC5141/install/bin.lnx86/process_file.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/OCEAN/corners/design/inv2.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/OCEAN/monteCarlo/spectreS/netlist/low_nat_stat.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/OCEAN/opamp741CharSpectreS/design/opampTest.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/OCEAN/paramAnalysis/design/opampAC.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/OCEAN/pll/design/analog/top.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/corners/socket/multipleModelLib/netlist/cmos.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/corners/socket/multipleNumeric/netlist/cmos.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/corners/socket/multipleParametric/netlist/cmos.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/corners/socket/singleModelLib/netlist/cmos.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/corners/socket/singleNumeric/netlist/cmos.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/dfII/samples/artist/corners/spectreSVerilog/netlist/analog/ringOsc.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/itkDB/samples/CDF/main.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/itkDB/samples/CDF/mainCreate.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/itkDB/samples/DB/main.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/itkDB/samples/DB/netwire.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/itkDB/samples/HDB/main.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/itkDB/samples/HDB/traverse.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/itkDB/samples/TECH/main.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/modelwriter/lib/tcl8.4/tclAppInit.c
+/import/linux/opt/cadence/IC5141/tools.lnx86/modelwriter/lib/tk8.4/tkAppInit.c
+/import/linux/opt/cadence/ICC11241/install/bin.lnx86/cdsudp.c
+/import/linux/opt/cadence/ICC11241/install/bin.lnx86/genControl.c
+/import/linux/opt/cadence/ICC11241/install/bin.lnx86/io_fltr.c
+/import/linux/opt/cadence/ICC11241/install/bin.lnx86/process_file.c
+/import/linux/opt/cadence/LCU/install/bin.lnx86/cdsudp.c
+/import/linux/opt/cadence/LCU/install/bin.lnx86/genControl.c
+/import/linux/opt/cadence/LCU/install/bin.lnx86/io_fltr.c
+/import/linux/opt/cadence/LCU/install/bin.lnx86/process_file.c
+/import/linux/opt/cadence/LDV51/doc/vhpiref/examples/foreign/function/test.c
+/import/linux/opt/cadence/LDV51/doc/vhpiref/examples/foreign/procedure/test.c
+/import/linux/opt/cadence/LDV51/doc/vpivhpiref/example/get_connectivity.c
+/import/linux/opt/cadence/LDV51/install/bin.lnx86/cdsudp.c
+/import/linux/opt/cadence/LDV51/install/bin.lnx86/genControl.c
+/import/linux/opt/cadence/LDV51/install/bin.lnx86/io_fltr.c
+/import/linux/opt/cadence/LDV51/install/bin.lnx86/process_file.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/alu/complete/instance.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/alu/complete/optional.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/alu/complete/simulate.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/license/license.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/ram454/complete/instance.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/ram454/complete/optional.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/ram454/complete/simulate.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/ram454/ram454.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/replay/complete/instance.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/replay/complete/optional.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/replay/complete/simulate.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/examples/replay/ed.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/src/mti_omi_adapter_veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/src/omiEnums.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/src/omiUtilities.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/amp/src/omi_adapter_veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/SGS/src/initDelay.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/backan/ba_cellout_p.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/backan/ba_int_nwp.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/backan/ba_path_path.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/backan/dl_net_conl.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/backan/dl_net_intl.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/damem/src/bignum.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/damem/src/daram.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/damem/src/etc.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/damem/src/initram.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/damem/src/mvl.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/damem/src/version.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dcalc/src/dl_backan.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dcalc/src/dl_calc.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dcalc/src/dl_calc_bai.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dcalc/src/dl_calc_sc.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dcalc/src/dl_calc_si.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dcalc/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dlcalc/dl_backan.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dlcalc/dl_calc.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dlcalc/dl_veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dtran/src/dtran_calltf.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dtran/src/dtran_checktf.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dtran/src/dtran_consumer.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dtran/src/dtran_misctf.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/dtran/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/net_names/src/net_names.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/net_names/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/set_values/src/get_new_val.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/set_values/src/set_call.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/set_values/src/set_check.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/set_values/src/stuff_memory.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/set_values/src/stuff_module.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/set_values/src/stuff_reg.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/set_values/src/stuff_udp.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/set_values/src/utilities.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/set_values/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/toggle_count/src/tc_hash.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/toggle_count/src/tc_pli.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/toggle_count/src/tc_reports.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/toggle_count/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/toggle_test/src/tt_hash.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/toggle_test/src/tt_pli.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/toggle_test/src/tt_reports.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/pli/toggle_test/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/count_args/src/count_args.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/count_args/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/dtran/src/dtran.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/dtran/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo0/src/show_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo0/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo1/src/show_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo1/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo2/src/show_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo2/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo3/src/show_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo3/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo4/src/load_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo4/src/show_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo4/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo5/src/load_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo5/src/show_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo5/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo6/src/load_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo6/src/show_memwd.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/fifo6/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/hier_walker/src/hier_walker.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/hier_walker/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/set_values/src/set_call.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/set_values/src/set_check.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/set_values/src/stuff_module.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/set_values/src/stuff_value.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/set_values/src/utilities.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/set_values/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/var_args/src/var_args.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/examples/vpi/var_args/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/cpi_based/cpi_clk/solution/src/cpiClockCheck.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/cpi_based/cpi_clk/template.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/cpi_based/example3/example3.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/cpi_based/example4/example4.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/cpi_based/example5/example5.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vhpi_based/arch_nam/solution/lab9.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vhpi_based/arch_nam/template.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vhpi_based/example2/example2.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vhpi_based/vhpi_clknam/solution/src/naming_rules.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vhpi_based/vhpi_clknam/solution/src/rules.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vhpi_based/vhpi_clknam/solution/src/vhdl_net.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vhpi_based/vhpi_clknam/solution/src/vhdl_rules.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vhpi_based/vhpi_clknam/template.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/example1/example1.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/uncon/solution/lab6.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/uncon/template.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/vpi_clknam/solution/src/fileio.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/vpi_clknam/solution/src/naming_rules.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/vpi_clknam/solution/src/rules.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/vpi_clknam/solution/src/vlog_always.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/vpi_clknam/solution/src/vlog_net.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/vpi_clknam/solution/src/vlog_rules.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/hal/examples/vpi_based/vpi_clknam/template.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/ict/VHDL/nc/libtbl.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/ict/examples/vca/1_printModuleTree/main.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/ict/examples/vca/2_printInstanceTree/main.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/ict/examples/vca/3_printModuleSummary/main.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/ict/examples/vca/4_printInstanceSummary/main.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/ict/examples/vca/5_printControlAndBlockInfo/main.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/ict/examples/vca/6_printExpressionAndTermInfo/main.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/ict/examples/vca/7_ControlAndPathInfo/main.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/ict/pli/ncv1_21/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/cif/debug_using_cfc/src/cfc_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/cif/debug_using_cfc/src/debug.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/cif/import_architecture/src/fmi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/cif/import_architecture/src/tdsp_data_mux.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/cif/import_function/src/fmi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/cif/import_function/src/to_digit.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/cif/import_procedure/src/fmi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/cif/import_procedure/src/gt_comp.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi/driver/src/driver.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi/hierarchy/src/hierarchy.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi/navigate/src/navigate.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi/toggle/src/toggle.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi/waveform/src/waves.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi_vpi/driver/src/driver.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi_vpi/hierarchy/src/hierarchy.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi_vpi/navigate_mixed/src/mixedlang.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi_vpi/toggle/src/toggle.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/examples/vhpi_vpi/waveform/src/waves.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/src/cfc_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/src/fmi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/inca/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example1/src/my_pli_calc.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example1/src/my_vpi_calc.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example2/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example2/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example3/src/pli_hello.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example3/src/vpi_hello.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example4/src/my_cfc_add.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example4/src/my_fmi_add.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example4/src/my_vhpi_add.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example5/src/my_cfc_test.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example5/src/my_fmi_test.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/pliwizard/examples/example5/src/my_vhpi_test.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/simvision/share/cfcuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/simvision/share/fmiuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/simvision/share/veriuser-dai.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/simvision/share/veriuser-recordvars-trst.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/simvision/share/veriuser-recordvars.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/simvision/share/veriuser-signalscan.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/simvision/share/veriuser-trst.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/src/cfc_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/src/fmi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/transrecord/files/veriuser_sdi.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/txe/lib/tcl8.3/tclAppInit.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/verilog/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/verilog/src/vpi_user.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/vtools/vfault/examples/scan/broadside.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/vtools/vfault/examples/scan/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/vtools/vfault/src/veriddq.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/vtools/vfault/src/veriuser.c
+/import/linux/opt/cadence/LDV51/tools.lnx86/vtools/vfault/src/vpi_user.c
+/import/linux/opt/cadence/NCSU-CDK/local-1.4/bin/bar.c
+/import/linux/opt/cadence/NCSU-CDK/local-1.4/skill/menus/ncsu/p2m/imager.c
+/import/linux/opt/cadence/NCSU-CDK/local-1.4/skill/menus/ncsu/p2m/xlator.c
+/import/linux/opt/cadence/SOC42/install/bin.lnx86/cdsudp.c
+/import/linux/opt/cadence/SOC42/install/bin.lnx86/genControl.c
+/import/linux/opt/cadence/SOC42/install/bin.lnx86/io_fltr.c
+/import/linux/opt/cadence/SOC42/install/bin.lnx86/process_file.c
+/import/linux/opt/cadence/SOC42/share/fe/lib/tcl8.3/tclAppInit.c
+/import/linux/opt/cadence/SOC42/share/fe/lib/tk8.3/tkAppInit.c
+/import/linux/opt/cadence/SOC42/share/plato/lib/tcl8.3/tclAppInit.c
+/import/linux/opt/cadence/SOC42/share/plato/lib/tk8.3/tkAppInit.c
+/import/linux/opt/cadence/SOC42/tools.lnx86/celtic/lib/tcl8.3/tclAppInit.c
+/import/linux/opt/cadence/SOC42/tools.lnx86/tsunamic/lib/tcl8.3/tclAppInit.c
+/import/linux/opt/cadence/SPB152/install/bin.lnx86/cdsudp.c
+/import/linux/opt/cadence/SPB152/install/bin.lnx86/genControl.c
+/import/linux/opt/cadence/SPB152/install/bin.lnx86/io_fltr.c
+/import/linux/opt/cadence/SPB152/install/bin.lnx86/process_file.c
+/import/linux/opt/cadence/SPB152/tools.lnx86/caeviewshdl/logic.c
+/import/linux/opt/cadence/SPB152/tools.lnx86/caeviewshdl/main.c
+/import/linux/opt/cadence/SPB152/tools.lnx86/caeviewshdl/phys.c
+/import/linux/opt/cadence/SPB152/tools.lnx86/caeviewshdl/user.c
+/import/linux/opt/cadence/SPB152/tools.lnx86/pcb/examples/verilog-PLI/active_times/act_monitor.c
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ cd exercises/
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises[01;31m (lab8)[00m$ ls
+[0m[01;34m3-subshells[0m
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises[01;31m (lab8)[00m$ cd 3-subshells/
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ ls
+Makefile
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ make
+cd ~/cs240
+ls
+Makefile
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ ls
+Makefile
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ vum [K[K[Kim m[KMakefile 
+[?1000h[?1049h[?1h=[1;45r[23m[24m[0m[H[J[?25l[45;1H"Makefile" 3L, 23C[1;1H[36mall:[0m
+[31m                cd ~/cs240
+                ls[0m
+[94m~                                                                                                                                                             [5;1H~                                                                                                                                                             [6;1H~                                                                                                                                                             [7;1H~                                                                                                                                                             [8;1H~                                                                                                                                                             [9;1H~                                                                                                                                                             [10;1H~                                                                                                                                                             [11;1H~                                                                                                                                                             [12;1H~                                                                                                                                                             [13;1H~                                                                                                                                                             [14;1H~                                                                                                                                                             [15;1H~                                                                                                                                                             [16;1H~                                                                                                                                                             [17;1H~                                                                                                                                                             [18;1H~                                                                                                                                                             [19;1H~                                                                                                                                                             [20;1H~                                                                                                                                                             [21;1H~                                                                                                                                                             [22;1H~                                                                                                                                                             [23;1H~                                                                                                                                                             [24;1H~                                                                                                                                                             [25;1H~                                                                                                                                                             [26;1H~                                                                                                                                                             [27;1H~                                                                                                                                                             [28;1H~                                                                                                                                                             [29;1H~                                                                                                                                                             [30;1H~                                                                                                                                                             [31;1H~                                                                                                                                                             [32;1H~                                                                                                                                                             [33;1H~                                                                                                                                                             [34;1H~                                                                                                                                                             [35;1H~                                                                                                                                                             [36;1H~                                                                                                                                                             [37;1H~                                                                                                                                                             [38;1H~                                                                                                                                                             [39;1H~                                                                                                                                                             [40;1H~                                                                                                                                                             [41;1H~                                                                                                                                                             [42;1H~                                                                                                                                                             [43;1H~                                                                                                                                                             [44;1H~                                                                                                                                                             [0m[45;141H1,1[11CAll[1;1H[34h[?25h[?25l[45;141H2,11-25[2;25H[34h[?25h[?25l[45;131H~@k[2;25H[45;131H   [2;26H[45;144H2-26[2;26H[34h[?25h[?25l[45;131H~@k[2;26H[45;131H   [2;26H[34h[?25h[?25l[45;131Hi[2;26H[45;131H [2;26H[45;1H[1m-- INSERT --[0m[45;13H[K[45;141H2,12-26[7CAll[2;26H[34h[?25h[?25l[45;144H3-27[2;27H[34h[?25h[?25l[2;26H[K[45;144H2-26[2;26H[34h[?25h[?25l[2;25H[K[45;144H1-25[2;25H[34h[?25h[?25l[2;24H[K[45;144H0-24[2;24H[34h[?25h[?25l[2;23H[K[45;143H9-23 [2;23H[34h[?25h[?25l[2;22H[K[45;143H8-22[2;22H[34h[?25h[?25l[2;21H[K[45;143H7-21[2;21H[34h[?25h[?25l[3;44r[3;1H[L[1;45r[3;1H[31m                [0m[45;141H[K[45;141H3,3-17[8CAll[3;17H[34h[?25h[?25l[31mc[0m[45;143H4-18[3;18H[34h[?25h[?25l[31md[0m[45;143H5-19[3;19H[34h[?25h[?25l[31m [0m[45;143H6-20[3;20H[34h[?25h[?25l[31mc[0m[45;143H7-21[3;21H[34h[?25h[?25l[31ms[0m[45;143H8-22[3;22H[34h[?25h[?25l[31m2[0m[45;143H9-23[3;23H[34h[?25h[?25l[31m4[0m[45;143H10-24[3;24H[34h[?25h[?25l[31m0[0m[45;144H1-25[3;25H[34h[?25h[45;1H[K[?25l[45;141H3,10-24[7CAll[3;24H[34h[?25h[?25l[45;131H;[3;24H[45;131H [3;24H[34h[?25h[?25l[45;131H~@k[3;24H[45;131H   [3;23H[45;143H9-23 [3;23H[34h[?25h[?25l[45;131H:[3;23H[45;131H[K[45;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l[?1000l"Makefile" 4L, 28C written
+[?1l>[34h[?25h[?1049l[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ vim Makefile ls[Kmake
+cd ~
+cd cs240
+/bin/sh: 1: cd: can't cd to cs240
+make: *** [Makefile:3: all] Error 2
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ makevim Makefile make[Kvim Makefile 
+[?1000h[?1049h[?1h=[1;45r[23m[24m[0m[H[J[?25l[45;1H"Makefile" 4L, 28C[1;1H[36mall:[0m
+[31m                cd ~
+                cd cs240
+                ls[0m
+[94m~                                                                                                                                                             [6;1H~                                                                                                                                                             [7;1H~                                                                                                                                                             [8;1H~                                                                                                                                                             [9;1H~                                                                                                                                                             [10;1H~                                                                                                                                                             [11;1H~                                                                                                                                                             [12;1H~                                                                                                                                                             [13;1H~                                                                                                                                                             [14;1H~                                                                                                                                                             [15;1H~                                                                                                                                                             [16;1H~                                                                                                                                                             [17;1H~                                                                                                                                                             [18;1H~                                                                                                                                                             [19;1H~                                                                                                                                                             [20;1H~                                                                                                                                                             [21;1H~                                                                                                                                                             [22;1H~                                                                                                                                                             [23;1H~                                                                                                                                                             [24;1H~                                                                                                                                                             [25;1H~                                                                                                                                                             [26;1H~                                                                                                                                                             [27;1H~                                                                                                                                                             [28;1H~                                                                                                                                                             [29;1H~                                                                                                                                                             [30;1H~                                                                                                                                                             [31;1H~                                                                                                                                                             [32;1H~                                                                                                                                                             [33;1H~                                                                                                                                                             [34;1H~                                                                                                                                                             [35;1H~                                                                                                                                                             [36;1H~                                                                                                                                                             [37;1H~                                                                                                                                                             [38;1H~                                                                                                                                                             [39;1H~                                                                                                                                                             [40;1H~                                                                                                                                                             [41;1H~                                                                                                                                                             [42;1H~                                                                                                                                                             [43;1H~                                                                                                                                                             [44;1H~                                                                                                                                                             [0m[45;141H3,9-23[8CAll[3;23H[34h[?25h[?25l[45;131H~@k[3;23H[45;131H   [3;24H[45;143H10-24[3;24H[34h[?25h[?25l[45;131H~@k[3;24H[45;131H   [3;24H[34h[?25h[?25l[45;131Hi[3;24H[45;131H [3;24H[45;1H[1m-- INSERT --[0m[45;13H[K[45;141H3,10-24[7CAll[3;24H[34h[?25h[?25l[45;144H1-25[3;25H[34h[?25h[?25l[3;24H[K[45;144H0-24[3;24H[34h[?25h[?25l[3;23H[K[45;143H9-23 [3;23H[34h[?25h[?25l[3;22H[K[45;143H8-22[3;22H[34h[?25h[?25l[3;21H[K[45;143H7-21[3;21H[34h[?25h[?25l[3;20H[K[45;143H6-20[3;20H[34h[?25h[?25l[3;19H[K[45;143H5-19[3;19H[34h[?25h[?25l[3;18H[K[45;143H4-18[3;18H[34h[?25h[?25l[3;17H[K[45;143H3-17[3;17H[34h[?25h[?25l[3;9H[K[45;143H2-9 [3;9H[34h[?25h[?25l[3;1H[K[4;1H                ls[45;143H1  [3;1H[34h[?25h[?25l[2;44r[44;1H
+[1;45r[2;1H[31m                cd ~
+                ls[0m[44;1H[94m~                                                                                                                                                             [0m[45;141H[K[45;141H2,7-21[8CAll[2;21H[34h[?25h[45;1H[K[2;20H[?25l[45;131H^[[2;20H[45;131H  [2;21H[45;141H2,6-20[8CAll[2;20H[34h[?25h[?25l[45;131H:[2;20H[45;131H[K[45;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l[?1000l"Makefile" 3L, 17C written
+[?1l>[34h[?25h[?1049l[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ vim Makefile make[K
+cd ~
+ls
+Makefile
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ makevim Makefile make[Kvim Makefile 
+[?1000h[?1049h[?1h=[1;45r[23m[24m[0m[H[J[?25l[45;1H"Makefile" 3L, 17C[1;1H[36mall:[0m
+[31m                cd ~
+                ls[0m
+[94m~                                                                                                                                                             [5;1H~                                                                                                                                                             [6;1H~                                                                                                                                                             [7;1H~                                                                                                                                                             [8;1H~                                                                                                                                                             [9;1H~                                                                                                                                                             [10;1H~                                                                                                                                                             [11;1H~                                                                                                                                                             [12;1H~                                                                                                                                                             [13;1H~                                                                                                                                                             [14;1H~                                                                                                                                                             [15;1H~                                                                                                                                                             [16;1H~                                                                                                                                                             [17;1H~                                                                                                                                                             [18;1H~                                                                                                                                                             [19;1H~                                                                                                                                                             [20;1H~                                                                                                                                                             [21;1H~                                                                                                                                                             [22;1H~                                                                                                                                                             [23;1H~                                                                                                                                                             [24;1H~                                                                                                                                                             [25;1H~                                                                                                                                                             [26;1H~                                                                                                                                                             [27;1H~                                                                                                                                                             [28;1H~                                                                                                                                                             [29;1H~                                                                                                                                                             [30;1H~                                                                                                                                                             [31;1H~                                                                                                                                                             [32;1H~                                                                                                                                                             [33;1H~                                                                                                                                                             [34;1H~                                                                                                                                                             [35;1H~                                                                                                                                                             [36;1H~                                                                                                                                                             [37;1H~                                                                                                                                                             [38;1H~                                                                                                                                                             [39;1H~                                                                                                                                                             [40;1H~                                                                                                                                                             [41;1H~                                                                                                                                                             [42;1H~                                                                                                                                                             [43;1H~                                                                                                                                                             [44;1H~                                                                                                                                                             [0m[45;141H2,6-20[8CAll[2;20H[34h[?25h[?25l[45;131H~@k[2;20H[45;131H   [3;18H[45;141H3,4-18[3;18H[34h[?25h[?25l[45;131Hi[3;18H[45;131H [3;18H[45;1H[1m-- INSERT --[0m[45;13H[K[45;141H3,4-18[8CAll[3;18H[34h[?25h[?25l[45;143H5-19[3;19H[34h[?25h[?25l[3;18H[K[45;143H4-18[3;18H[34h[?25h[?25l[3;17H[K[45;143H3-17[3;17H[34h[?25h[?25l[3;9H[K[45;143H2-9 [3;9H[34h[?25h[?25l[3;1H[K[45;143H1  [3;1H[34h[?25h[?25l[94m~                                                                                                                                                             [0m[45;141H2,7-21[2;21H[34h[?25h[?25l[31m/[0m[45;143H8-22[2;22H[34h[?25h[?25l[31mc[0m[45;143H9-23[2;23H[34h[?25h[?25l[31ms[0m[45;143H10-24[2;24H[34h[?25h[?25l[31m2[0m[45;144H1-25[2;25H[34h[?25h[?25l[31m4[0m[45;144H2-26[2;26H[34h[?25h[?25l[31m0[0m[45;144H3-27[2;27H[34h[?25h[?25l[31m;[0m[45;144H4-28[2;28H[34h[?25h[?25l[31m [0m[45;144H5-29[2;29H[34h[?25h[?25l[31ml[0m[45;144H6-30[2;30H[34h[?25h[?25l[31ms[0m[45;144H7-31[2;31H[34h[?25h:[?25l[45;131H^[[2;31H[45;133H:[2;31H[45;131H   [2;31H [45;1H[K[45;141H2,16-30[7CAll[2;30H[34h[?25h[?25l[45;131H:[2;30H[45;131H[K[45;1H:[34h[?25hw[?25l[34h[?25hq[?25l[34h[?25h[?25l[?1000l"Makefile" 2L, 22C written
+[?1l>[34h[?25h[?1049l[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ vim Makefile make[K
+cd ~/cs240; ls
+announce.html  assets  docs	      exercises  index.html  labs  online    README.md	umt.make
+announce.umt   bin     exams-quizzes  hws	 index.umt   misc  projects  slides
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ 
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8/exercises/3-subshells[01;31m (lab8)[00m$ cd ../..
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ wc -l cd ../..[4Pmakecd ../..[2Pwc -l [K[Kl `[K`[K`[K`[K`fu[Kind -![K/[K[K~/cs240/projects -name ''*'.'c'c'[C`
+ 159 /home/alongo5/cs240/projects/prj1-sol/wordcounts.cc
+ 123 /home/alongo5/cs240/projects/prj2/extras/command.cc
+  72 /home/alongo5/cs240/projects/prj2/extras/seq-test.cc
+ 354 total
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ echo $?
+0
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ falsw[Ke [K; echp[Ko 123
+123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ true [K; echo 123
+123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ false && echo 123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ true && echo 123
+123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ false || echo 123
+123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ true || echo 123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ sleep 1-[K0 [K: [K[K; echo 123
+123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ sleep 10; echo 123[1P[C[1@ [1@&[1@&
+123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ sleep 10 && echo 123 &
+[1] 2295533
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ 123
+c;s[K[Kls
+[H[J[1]+  Done                    sleep 10 && echo 123
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ jops[K[Kbs
+[01;32malongo5@remote05[00m:[01;34m~/i240a/submit/lab8[01;31m (lab8)[00m$ exit
+
+Script done on 2020-03-26 12:28:53-04:00 [COMMAND_EXIT_CODE="0"]
