@@ -24,9 +24,8 @@ class Stack{
 
 	int pop(){
 	    if(stkIndex != 0){    
-                int temp = stkIndex;
        	        stkIndex--;
-	        return stk[temp];
+	        return stk[stkIndex];
 	    }
 	    else{
                 std::cout << "Cannot pop. Stack is empty" << std::endl;
@@ -35,7 +34,7 @@ class Stack{
 	}
 
         int size(){
-            return stkIndex + 1;
+            return stkIndex;
 	}
 
 };
@@ -72,30 +71,40 @@ int main(int argc, const char * argv[]){
 	std::exit(1);
     }
     try{
-        for(std::size_t i = 1; i < sizeof(argv)/sizeof(argv[0]); i++){
-            if(strlen(argv[i]) == 1 && getDelim(argv[i][0]) != 0){
-                int currDelim = getDelim(argv[i][0]);
-		if(currDelim > 0){
-	     	    s.push(currDelim);
-	        }
-	        else{
-                    if(s.stk.size() == 0){
-                        std::exit(1);
+        for(int i = 1; i < argc; i++){
+            if(strlen(argv[i]) == 1){
+		if(getDelim(argv[i][0])== 0){
+                    std::cout << "invalid delimeter " << argv[i][0] << std::endl;
+		    std::exit(1);
+		}
+		if(getDelim(argv[i][0]) > 0){
+		    s.push(getDelim(argv[i][0]));
+		}
+		if(getDelim(argv[i][0]) < 0){
+                    if(s.size()==0){
+			    std::cout << "unbalanced at argument" << i << std::endl;
+			    std::exit(1);
 		    }
 		    else{
-                        int popval = s.pop();
-		        if(popval != currDelim/-1){
-			    std::exit(1);
-			}	
-		    }
+                        int popVal = s.pop();
+			if(popVal != getDelim(argv[i][0])*-1){
+			    std::cout << "unbalanced at argument " << i << std::endl;
+			}
+	            }
+		    
 		}
 	    }
+	    else{
+                std::cout << "Multiple character argument: " << argv[i][0] << std::endl;
+		std::exit(1);
+	    }
 	}
-	if(s.size()-1 == 0 ){
+        if(s.size()==0){
             std::exit(0);
 	}
 	else{
-            std::exit(1);
+            std::cout << "Unbalanced at argument " << argc-1 << std::endl;
+	    std::exit(1);
 	}
     }
     catch(const std::logic_error& e){
