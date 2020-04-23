@@ -91,6 +91,12 @@ int main(int argc, const char * argv[]){
 		}
 	    }
 	}
+	if(s.size()-1 == 0 ){
+            std::exit(0);
+	}
+	else{
+            std::exit(1);
+	}
     }
     catch(const std::logic_error& e){
         std::cerr << "usage: " << std::endl;
